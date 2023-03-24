@@ -1,17 +1,28 @@
 <template>
-  <div>
-    <h1>Home page</h1>
-  </div>
+  <main>
+    <div>
+      <HeroComponent />
+    </div>
+    <div class="py-5 text-center">
+      <AboutComponent />
+    </div>
+  </main>
 </template>
 
 <script>
+import AboutComponent from "../components/AboutComponent.vue";
+import HeroComponent from "../components/HeroComponent.vue";
+
 export default {
   setup() {
-
-
-    return {}
-  }
+    return {};
+  },
+  components: { HeroComponent, AboutComponent }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.border-b {
+  border-bottom: 3px black solid;
+}
+</style>
