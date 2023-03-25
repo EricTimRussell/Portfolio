@@ -1,6 +1,6 @@
 <template>
   <main class="container-fluid">
-    <div class="row navbar pt-4">
+    <div class="row pt-4">
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center nav-line-container">
         <span class="nav-line-y"></span>
@@ -79,7 +79,7 @@ a:active {
 
 .nav-section {
   padding-top: .9rem;
-  border-bottom: #33ff00 solid 3px;
+  border-bottom: #33ff00 solid 5px;
   padding-left: 0%;
   padding-right: 0%;
 }
@@ -126,7 +126,7 @@ a:active {
     border: #33ff00 2px solid;
     height: 12px;
     position: relative;
-    top: .5rem;
+    top: .2rem;
   }
 
   .nav-line-x {
@@ -134,7 +134,15 @@ a:active {
     height: 1px;
     width: 15px;
     position: relative;
-    top: .5rem;
+    top: .2rem;
+  }
+
+  a:hover {
+    transform: translateY(-.4rem);
+  }
+
+  a:active {
+    transform: translateY(-.4rem);
   }
 
   .nav-section {

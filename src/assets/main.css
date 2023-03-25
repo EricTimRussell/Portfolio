@@ -1,6 +1,9 @@
 main {
   background-color: #00000098;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url(../assets/images/pipboybackground.jpg);
+  background-repeat: none;
+  background-size: cover;
 }
 
 /* Navbar */
@@ -29,70 +32,61 @@ main {
 /* Hero */
 
 .hero-name {
-  color: aliceblue;
+  color: #33ff00;
   text-shadow: #282828 2px 2px;
-  position: relative;
-  bottom: 13rem;
-  right: 25rem;
-  font-size: 64px;
-  letter-spacing: 2px;
-}
-
-.hero-title {
-  color: aliceblue;
-  text-shadow: #282828 2px 2px;
-  position: relative;
-  bottom: 12rem;
-  right: 18rem;
   font-size: 48px;
   letter-spacing: 2px;
 }
 
+.hero-title {
+  color: #33ff00;
+  text-shadow: #282828 2px 2px;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.hero-pipboy-img {
+  height: 42rem;
+  border-radius: 10px;
+  box-shadow: #33ff00 5px 5px 5px;
+  background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
+  background-size: cover;
+  background-position-y: 20%;
+}
+
 @media (max-width: 768px) {
-  .hero-title {
-    color: aliceblue;
-    text-shadow: #282828 3px 3px;
-    position: inherit;
-    bottom: none;
-    right: none;
-    text-align: center;
-    margin-bottom: 10rem;
-    font-size: 30px;
-    letter-spacing: 2px;
+  .hero-pipboy-img {
+    width: 90vh;
+    border-radius: 10px;
+    box-shadow: #33ff00 5px 5px 5px;
+    background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
+    background-size: cover;
+    background-position-y: 25%;
   }
 
   .hero-name {
-    color: aliceblue;
-    text-shadow: #282828 3px 3px;
-    position: inherit;
-    bottom: none;
-    right: none;
-    text-align: center;
+    color: #33ff00;
+    text-shadow: #282828 2px 2px;
     font-size: 38px;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    color: #33ff00;
+    text-shadow: #282828 2px 2px;
+    font-size: 17px;
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 1200px) {
-  .hero-title {
-    color: aliceblue;
-    text-shadow: #282828 3px 3px;
-    position: relative;
-    bottom: 5rem;
-    right: -1rem;
-    margin-bottom: 10rem;
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-
-  .hero-name {
-    color: aliceblue;
-    text-shadow: #282828 3px 3px;
-    position: relative;
-    bottom: 4rem;
-    right: 4rem;
-    font-size: 46px;
-    letter-spacing: 2px;
+@media (max-width: 1000px) {
+  .hero-pipboy-img {
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: #33ff00 5px 5px 5px;
+    background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -191,13 +185,6 @@ main {
   }
 }
 
-.hero-bg {
-  background-image: url(../assets/images/Boise.jpg);
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  min-height: 75vh;
-}
 
 
 
@@ -227,6 +214,10 @@ main {
   font-size: 44px;
 }
 
+.text-retro {
+  color: #33ff00;
+}
+
 .rounded {
   border-radius: 5px;
 }
@@ -237,4 +228,8 @@ main {
   width: 300px;
   margin-top: .5rem;
   margin-bottom: .5rem;
+}
+
+.border-thick {
+  border: #33ff00 10px solid;
 }
