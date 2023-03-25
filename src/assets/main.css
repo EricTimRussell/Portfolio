@@ -1,3 +1,240 @@
 main {
-  background-color: #e1e1e137;
+  background-color: #00000098;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #00000084;
+}
+
+.nav-button {
+  color: #33ff00;
+  background-color: #28282800;
+  border: none;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  color: #33ff00;
+}
+
+@media (max-width: 768px) {
+  .navbar-height {
+    height: 5rem;
+    padding: 0%;
+  }
+}
+
+/* Hero */
+
+.hero-name {
+  color: aliceblue;
+  text-shadow: #282828 2px 2px;
+  position: relative;
+  bottom: 13rem;
+  right: 25rem;
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  color: aliceblue;
+  text-shadow: #282828 2px 2px;
+  position: relative;
+  bottom: 12rem;
+  right: 18rem;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    color: aliceblue;
+    text-shadow: #282828 3px 3px;
+    position: inherit;
+    bottom: none;
+    right: none;
+    text-align: center;
+    margin-bottom: 10rem;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .hero-name {
+    color: aliceblue;
+    text-shadow: #282828 3px 3px;
+    position: inherit;
+    bottom: none;
+    right: none;
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    color: aliceblue;
+    text-shadow: #282828 3px 3px;
+    position: relative;
+    bottom: 5rem;
+    right: -1rem;
+    margin-bottom: 10rem;
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .hero-name {
+    color: aliceblue;
+    text-shadow: #282828 3px 3px;
+    position: relative;
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 46px;
+    letter-spacing: 2px;
+  }
+}
+
+
+.title-expand {
+  -webkit-animation: title-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
+  animation: title-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
+}
+
+@-webkit-keyframes title-expand {
+  0% {
+    letter-spacing: -0.8rem;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title-expand {
+  0% {
+    letter-spacing: -0.8rem;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.fade-in-hero {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-bg {
+  background-image: url(../assets/images/Boise.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  min-height: 75vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utilities */
+.elevation {
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.fs-md {
+  font-size: 22px;
+}
+
+.fs-lg {
+  font-size: 32px;
+}
+
+.fs-xl {
+  font-size: 44px;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.divider {
+  background-color: #282828;
+  height: 10px;
+  width: 300px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }

@@ -1,24 +1,44 @@
 <template>
-  <div class="container-fluid">
-    <div class="row navbar-height">
-      <div class="col-1">
-        <img src="../assets/images/EricBnW (3).JPG" class="card-img-top profile-img" alt="profile image">
+  <main class="container-fluid">
+    <div class="row navbar pt-4">
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center nav-line-container">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a class="fs-lg nav-button">ABOUT</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
       </div>
-      <div class="col-3">
-        <h5 class="">Software Developer</h5>
-        <p class="">Full-Stack Web Developer && JavaScript && Vue && C# || Aspiring Dungeon Master += World's Greatest Dad
-        </p>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a class="fs-lg nav-button">SKILLS</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
       </div>
-      <div class="col-8 d-flex justify-content-center">
-        <nav class="d-flex gap-5">
-          <a>About</a>
-          <a>Skills</a>
-          <a>Works</a>
-          <a>Contact</a>
-        </nav>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a class="fs-lg nav-button">WORKS</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
       </div>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a class="fs-lg nav-button">MORE</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
+      </div>
+      <div class="col-1 nav-section"></div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -32,14 +52,93 @@ export default {
 </script>
 
 <style scoped>
-.profile-img {
-  border-radius: 50%;
-  max-height: auto;
-  max-width: 8rem;
+a:hover {
+  transform: scale(1.2);
+  transform: translateY(-.7rem);
 }
 
-.navbar-height {
-  height: 12rem;
-  padding: 1.5rem;
+a:active {
+  transform: scale(1.2);
+  transform: translateY(-.7rem);
+}
+
+.nav-line-y {
+  border: #33ff00 2px solid;
+  height: 15px;
+  position: relative;
+  top: .5rem;
+}
+
+.nav-line-x {
+  border: #33ff00 2px solid;
+  height: 1px;
+  width: 15px;
+  position: relative;
+  top: .5rem;
+}
+
+.nav-section {
+  padding-top: .9rem;
+  border-bottom: #33ff00 solid 3px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+@media (max-width: 1200px) {
+  a {
+    font-size: 16px;
+  }
+
+  .nav-line-y {
+    border: #33ff00 2px solid;
+    height: 12px;
+    position: relative;
+    top: .1rem;
+  }
+
+  .nav-line-x {
+    border: #33ff00 2px solid;
+    height: 1px;
+    width: 15px;
+    position: relative;
+    top: .1rem;
+  }
+
+  a:hover {
+    transform: translateY(-.5rem);
+  }
+
+  a:active {
+    transform: translateY(-.5rem);
+  }
+
+  .nav-section {
+    border-bottom: #33ff00 solid 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+
+  .nav-line-y {
+    border: #33ff00 2px solid;
+    height: 12px;
+    position: relative;
+    top: .5rem;
+  }
+
+  .nav-line-x {
+    border: #33ff00 2px solid;
+    height: 1px;
+    width: 15px;
+    position: relative;
+    top: .5rem;
+  }
+
+  .nav-section {
+    border-bottom: #33ff00 solid 2px;
+  }
 }
 </style>
