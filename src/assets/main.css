@@ -34,31 +34,40 @@ main {
 .hero-name {
   color: #33ff00;
   text-shadow: #282828 2px 2px;
-  font-size: 48px;
+  font-size: 46px;
   letter-spacing: 2px;
 }
 
 .hero-title {
   color: #33ff00;
   text-shadow: #282828 2px 2px;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: 2px;
 }
+
+.hero-motto {
+  color: #33ff00;
+  text-shadow: #282828 2px 2px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
 
 .hero-pipboy-img {
   height: 42rem;
   border-radius: 10px;
-  box-shadow: #33ff00 5px 5px 5px;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  background-color: #33ff00;
   background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
   background-size: cover;
-  background-position-y: 20%;
+  background-position-y: 25%;
 }
 
 @media (max-width: 768px) {
   .hero-pipboy-img {
     width: 90vh;
     border-radius: 10px;
-    box-shadow: #33ff00 5px 5px 5px;
+    box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
     background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
     background-size: cover;
     background-position-y: 25%;
@@ -77,13 +86,20 @@ main {
     font-size: 17px;
     letter-spacing: 2px;
   }
+
+  .hero-motto {
+    color: #33ff00;
+    text-shadow: #282828 2px 2px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
 }
 
 @media (max-width: 1000px) {
   .hero-pipboy-img {
     height: 30rem;
     border-radius: 10px;
-    box-shadow: #33ff00 5px 5px 5px;
+    box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
     background-image: linear-gradient(#33ff003e, #33ff003e), url(../assets/images/EricBnW.JPG);
     background-size: cover;
     background-position: center;
@@ -214,8 +230,28 @@ main {
   font-size: 44px;
 }
 
+.letter-space {
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .text-retro {
   color: #33ff00;
+}
+
+.text-shadow {
+  text-shadow: #9a9a9a 1px 2px;
 }
 
 .rounded {
@@ -223,13 +259,15 @@ main {
 }
 
 .divider {
-  background-color: #282828;
-  height: 10px;
-  width: 300px;
+  background-color: #33ff00;
+  height: 5px;
+  width: 100%;
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
 
 .border-thick {
-  border: #33ff00 10px solid;
+  border: #33ff00 7px solid;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }

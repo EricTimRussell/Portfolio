@@ -1,38 +1,43 @@
 <template>
-  <main class="container-fluid">
-    <div class="row pt-4">
+  <main class="container-fluid pt-2">
+    <div class="row justify-content-evenly pt-4">
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center nav-line-container">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a class="fs-lg nav-button">ABOUT</a>
+        <a href="#hero" class="fs-lg nav-button">STATS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
       <div class="col-1 nav-section"></div>
-      <div class="col-1 nav-section"></div>
-      <div class="col-1 d-flex justify-content-center">
+      <div class="col-1 d-flex justify-content-center nav-line-container">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a class="fs-lg nav-button">SKILLS</a>
-        <span class="nav-line-x"></span>
-        <span class="nav-line-y"></span>
-      </div>
-      <div class="col-1 nav-section"></div>
-      <div class="col-1 nav-section"></div>
-      <div class="col-1 d-flex justify-content-center">
-        <span class="nav-line-y"></span>
-        <span class="nav-line-x"></span>
-        <a class="fs-lg nav-button">WORKS</a>
+        <a href="#about" class="fs-lg nav-button">ABOUT</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
       <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a href="#skills" class="fs-lg nav-button">SKILLS</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
+      </div>
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a class="fs-lg nav-button">MORE</a>
+        <a href="#works" class="fs-lg nav-button">WORKS</a>
+        <span class="nav-line-x"></span>
+        <span class="nav-line-y"></span>
+      </div>
+      <div class="col-1 nav-section"></div>
+      <div class="col-1 d-flex justify-content-center">
+        <span class="nav-line-y"></span>
+        <span class="nav-line-x"></span>
+        <a href="#more" class="fs-lg nav-button">MORE</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
