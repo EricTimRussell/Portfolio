@@ -1,6 +1,6 @@
 <template>
   <header id="hero" class="container-fluid">
-    <div class="row pt-6">
+    <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
         <span class="status-bar text-retro">5</span>
@@ -31,7 +31,7 @@
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
         <h2 class="hero-name hero-animation-space anim-typewriter-name">Eric Russell</h2>
         <h3 class="hero-title hero-animation-space anim-typewriter-title">Level 5 - Full-Stack Developer</h3>
-        <p class="letter-space mb-5 hero-motto hero-animation-space anim-typewriter-motto">I am a full-stack developer
+        <p class="letter-space mb-5 hero-motto hero-anim-motto anim-typewriter-motto">I am a full-stack developer
           with a particular
           love for
           Vue.js and
@@ -57,6 +57,11 @@ export default {
   overflow: hidden;
 }
 
+.hero-anim-motto {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 /* Animation */
 .anim-typewriter-name {
   animation: typewriter-name 1.5s 1s normal both,
@@ -72,6 +77,7 @@ export default {
     width: 16rem;
   }
 }
+
 
 @keyframes blinkTextCursor {
   from {
@@ -134,6 +140,37 @@ export default {
 }
 
 
+@media (max-width: 768px) {
+  @keyframes typewriter-name {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 13.5rem;
+    }
+  }
+
+  @keyframes typewriter-title {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 17rem;
+    }
+  }
+
+  .anim-typewriter-motto {
+    animation: none
+  }
+
+  .hero-anim-motto {
+    white-space: normal;
+    text-align: center;
+  }
+
+}
 
 .header-border {
   border-top: 5px solid #33ff00;

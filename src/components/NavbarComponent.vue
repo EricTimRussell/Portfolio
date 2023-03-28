@@ -1,6 +1,6 @@
 <template>
-  <main class="container-fluid pt-2">
-    <div class="row justify-content-evenly pt-4">
+  <main class="container-fluid">
+    <div class="row justify-content-evenly pt-3">
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
