@@ -84,19 +84,6 @@ export default {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);
