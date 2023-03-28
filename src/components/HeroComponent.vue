@@ -73,5 +73,9 @@ export default {
   .mobile {
     display: none;
   }
+
+  .pt-6 {
+    padding-top: 3rem;
+  }
 }
 </style>

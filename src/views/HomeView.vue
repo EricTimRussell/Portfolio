@@ -9,7 +9,7 @@
     <div class="py-5 section-height">
       <AboutComponent />
     </div>
-    <div class="py-5 section-height">
+    <div class="section-height">
       <SkillsComponent />
     </div>
   </main>

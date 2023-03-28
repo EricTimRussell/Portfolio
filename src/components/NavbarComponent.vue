@@ -2,22 +2,22 @@
   <main class="container-fluid pt-2">
     <div class="row justify-content-evenly pt-4">
       <div class="col-1 nav-section"></div>
-      <div class="col-1 d-flex justify-content-center nav-line-container">
+      <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
         <a href="#hero" class="fs-lg nav-button">STATS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
-      <div class="col-1 nav-section"></div>
-      <div class="col-1 d-flex justify-content-center nav-line-container">
+      <div class="col-1 nav-section mx-1"></div>
+      <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
         <a href="#about" class="fs-lg nav-button">ABOUT</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
-      <div class="col-1 nav-section"></div>
+      <div class="col-1 nav-section mx-1"></div>
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
@@ -26,14 +26,14 @@
         <span class="nav-line-y"></span>
       </div>
       <div class="col-1 nav-section"></div>
-      <div class="col-1 d-flex justify-content-center">
+      <div class="col-1 d-flex justify-content-center ml-1">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
         <a href="#works" class="fs-lg nav-button">WORKS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
-      <div class="col-1 nav-section"></div>
+      <div class="col-1 nav-section ml-1"></div>
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
@@ -152,6 +152,10 @@ a:active {
 
   .nav-section {
     border-bottom: #33ff00 solid 2px;
+  }
+
+  .ml-1 {
+    margin-left: .33rem;
   }
 }
 </style>
