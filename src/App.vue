@@ -5,6 +5,9 @@ import NavbarComponent from "./components/NavbarComponent.vue";
 
 <template>
   <body>
+    <header class="sticky-top">
+      <NavbarComponent />
+    </header>
     <main>
       <RouterView />
     </main>

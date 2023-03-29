@@ -5,7 +5,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="#hero" class="fs-lg nav-button">STATS</a>
+        <a href="/" class="fs-lg nav-button">STATS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -13,7 +13,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="#about" class="fs-lg nav-button">ABOUT</a>
+        <a href="about" class="fs-lg nav-button">ABOUT</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -21,7 +21,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="#skills" class="fs-lg nav-button">SKILLS</a>
+        <a href="skills" class="fs-lg nav-button">SKILLS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -29,7 +29,7 @@
       <div class="col-1 d-flex justify-content-center ml-1">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="#works" class="fs-lg nav-button">WORKS</a>
+        <a href="works" class="fs-lg nav-button">WORKS</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -37,7 +37,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="#more" class="fs-lg nav-button">MORE</a>
+        <a href="more" class="fs-lg nav-button">MORE</a>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>

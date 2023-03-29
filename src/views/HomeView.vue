@@ -1,18 +1,7 @@
 <template>
-  <main>
-    <header class="sticky-top">
-      <NavbarComponent />
-    </header>
-    <div>
-      <HeroComponent />
-    </div>
-    <div class="py-5 section-height">
-      <AboutComponent />
-    </div>
-    <div class="section-height">
-      <SkillsComponent />
-    </div>
-  </main>
+  <div>
+    <HeroComponent />
+  </div>
 </template>
 
 <script>
@@ -29,8 +18,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.section-height {
-  min-height: 75vh;
-}
-</style>
+<style scoped></style>

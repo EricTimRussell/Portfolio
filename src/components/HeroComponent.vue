@@ -16,7 +16,7 @@
     </div>
   </header>
   <section class="container-fluid">
-    <div class="row pt-5 px-3 fade-in-hero">
+    <div class="row pt-5 fade-in-hero">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro  mobile">CSS</span>
         <span class="fs-xl text-retro px-3 my-3  mobile">SQL</span>

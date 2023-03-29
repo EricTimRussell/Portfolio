@@ -3,7 +3,7 @@ main {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-image: url(../assets/images/pipboybackground.jpg);
   background-repeat: none;
-  background-size: cover;
+  background-size: contain;
 }
 
 /* SECTION Navbar */
