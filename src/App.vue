@@ -11,7 +11,7 @@ import NavbarComponent from "./components/NavbarComponent.vue";
     </header>
     <main>
       <RouterView />
-      <footer class="sticky-bottom">
+      <footer class="sticky-bottom text-end">
         <button class="contact-button p-3" data-bs-toggle="modal" data-bs-target="#contactModal"><span
             class="material-symbols-outlined text-retro fs-xl">
             smartphone
