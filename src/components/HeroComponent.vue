@@ -16,7 +16,7 @@
     </div>
   </header>
   <section class="container-fluid">
-    <div class="row pt-5 fade-in-hero">
+    <div class="row pt-5 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro  mobile">CSS</span>
         <span class="fs-xl text-retro px-3 my-3  mobile">SQL</span>
@@ -32,10 +32,7 @@
         <h2 class="hero-name hero-animation-space anim-typewriter-name">Eric Russell</h2>
         <h3 class="hero-title hero-animation-space anim-typewriter-title">Level 5 - Full-Stack Developer</h3>
         <p class="letter-space mb-5 hero-motto hero-anim-motto anim-typewriter-motto">I am a full-stack developer
-          with a particular
-          love for
-          Vue.js and
-          caffeine.</p>
+          with a particular love for Vue.js and C#</p>
       </div>
     </div>
   </section>
@@ -64,7 +61,7 @@ export default {
 
 /* Animation */
 .anim-typewriter-name {
-  animation: typewriter-name 1.5s 1s normal both,
+  animation: typewriter-name 1s 1s normal both,
     blinkTextCursor 500ms 6 normal;
 }
 
@@ -125,7 +122,7 @@ export default {
   }
 
   to {
-    width: 53.5rem;
+    width: 49rem;
   }
 }
 

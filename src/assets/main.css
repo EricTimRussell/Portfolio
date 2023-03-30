@@ -22,6 +22,8 @@ main {
   color: #33ff00;
 }
 
+
+
 @media (max-width: 768px) {
   .navbar-height {
     height: 5rem;
@@ -143,7 +145,7 @@ main {
 }
 
 
-.fade-in-hero {
+.fade-in {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;

@@ -1,11 +1,11 @@
 <template>
   <main class="container-fluid">
-    <div class="row justify-content-evenly pt-3">
+    <div id="nav" class="row justify-content-evenly pt-3">
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="/" class="fs-lg nav-button">STATS</a>
+        <RouterLink to="/" class="fs-lg nav-button">STATS</RouterLink>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -13,7 +13,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="about" class="fs-lg nav-button">ABOUT</a>
+        <RouterLink to="about" class="fs-lg nav-button">ABOUT</RouterLink>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -21,7 +21,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="skills" class="fs-lg nav-button">SKILLS</a>
+        <RouterLink to="skills" class="fs-lg nav-button">SKILLS</RouterLink>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -29,7 +29,7 @@
       <div class="col-1 d-flex justify-content-center ml-1">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="works" class="fs-lg nav-button">WORKS</a>
+        <RouterLink to="works" class="fs-lg nav-button">WORKS</RouterLink>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -37,7 +37,7 @@
       <div class="col-1 d-flex justify-content-center">
         <span class="nav-line-y"></span>
         <span class="nav-line-x"></span>
-        <a href="more" class="fs-lg nav-button">MORE</a>
+        <RouterLink to="more" class="fs-lg nav-button">MORE</RouterLink>
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
@@ -57,6 +57,13 @@ export default {
 </script>
 
 <style scoped>
+#nav .active-router-link {
+  transform: scale(1.2);
+  transform: translateY(-.7rem);
+  text-decoration: underline dotted 5px #33ff00;
+}
+
+
 a:hover {
   transform: scale(1.2);
   transform: translateY(-.7rem);
