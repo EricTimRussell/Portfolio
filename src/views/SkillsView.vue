@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5">
+  <div class="pt-5 skills-vh">
     <SkillsComponent />
   </div>
 </template>
@@ -15,4 +15,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.skills-vh {
+  min-height: 110vh;
+}
+</style>

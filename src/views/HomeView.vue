@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hero-vh">
     <HeroComponent />
   </div>
 </template>
@@ -18,4 +18,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.hero-vh {
+  min-height: 90vh;
+}
+</style>

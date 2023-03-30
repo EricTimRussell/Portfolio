@@ -16,7 +16,7 @@
     </div>
   </header>
   <section class="container-fluid">
-    <div class="row pt-5 fade-in">
+    <div class="row p-5 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro  mobile">CSS</span>
         <span class="fs-xl text-retro px-3 my-3  mobile">SQL</span>
@@ -26,7 +26,7 @@
       </div>
       <div class="col-3 pt-5 mobile">
         <p class="fs-lg text-retro text-center">(12) Coffee &nbsp&nbsp A )</p>
-        <p class="fs-lg text-retro text-center">Willpower &nbsp&nbsp X )</p>
+        <p class="fs-lg text-retro text-center">80's Synthwave &nbsp&nbsp X )</p>
       </div>
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
         <h2 class="hero-name hero-animation-space anim-typewriter-name">Eric Russell</h2>

@@ -8,7 +8,7 @@
     </div>
     <div class="row">
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Tower" target="_blank">
           <div class="tower">
             <h6 class="fs-lg px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
@@ -17,7 +17,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Keeper" target="_blank">
           <div class="keepr">
             <h6 class="fs-lg px-3 text-retro text-retro-shadow">Keepr Full-Stack Application</h6>
@@ -26,7 +26,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Smedia" target="_blank">
           <div class="network">
             <h6 class="fs-lg px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
@@ -35,7 +35,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
           <h6 class="fs-lg px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
         </a>
@@ -160,5 +160,27 @@ a {
   height: 9vh;
   width: 30vh;
   display: cover;
+}
+
+@media (max-width: 1770px) {
+  .tower {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .keepr {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .network {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .riskier {
+    height: 30vh;
+    width: 30vh;
+  }
 }
 </style>

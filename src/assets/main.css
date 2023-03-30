@@ -2,7 +2,7 @@ main {
   background-color: #00000098;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-image: url(../assets/images/pipboybackground.jpg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

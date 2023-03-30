@@ -2,12 +2,16 @@
   <section class="container-fluid">
     <div class="row pt-5">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space more-title anim-typewriter">MORE</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space more-title anim-typewriter">WHAT AM I UP TO?</h2>
         <span class="divider"></span>
       </div>
+      <div class="col-12 text-center" v-if="isLoading">
+        <span class="text-retro fs-xl">Loading<i class="spinner-grow text-retro" role="status"></i><i
+            class="spinner-grow text-retro" role="status"></i><i class="spinner-grow text-retro" role="status"></i></span>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-12 text-retro pt-4">
+    <div class="row justify-content-center" v-if="!isLoading">
+      <div class="col-2 text-retro pt-4">
         <h2 class="mx-2 text-center">Current Project</h2>
         <a class=" d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier version 2">
@@ -21,7 +25,7 @@
           It will also utilize Google Firebase for my backend and database.</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row" v-if="!isLoading">
       <div class="row pt-5">
         <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
           <span class="divider"></span>
@@ -49,11 +53,24 @@
 </template>
 
 <script>
+import { ref, onMounted } from "vue";
+
 export default {
   setup() {
+    const isLoading = ref(false)
+    function pageLoading() {
+      isLoading.value = true
+      setTimeout(() => {
+        isLoading.value = false
+      }, 2500)
+    }
 
-
-    return {}
+    onMounted(() => {
+      pageLoading()
+    })
+    return {
+      isLoading
+    }
   }
 }
 </script>
@@ -66,7 +83,7 @@ export default {
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 1.8s 1 normal both,
+  animation: typewriter 2.5s 1 normal both,
     blinkTextCursor 500ms infinite normal;
 }
 
@@ -76,7 +93,7 @@ export default {
   }
 
   to {
-    width: 7.5rem;
+    width: 22rem;
   }
 }
 
