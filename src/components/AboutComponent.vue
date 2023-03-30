@@ -2,7 +2,7 @@
   <section id="about" class="container-fluid">
     <div class="row mobile justify-content-center">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space">ABOUT ME</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space about-title anim-typewriter">ABOUT ME</h2>
         <span class="divider"></span>
       </div>
       <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
@@ -40,6 +40,37 @@ export default {
 </script>
 
 <style scoped>
+.about-title {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1.5s 1 normal both,
+    blinkTextCursor 500ms infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12.5rem;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right: #33ff00 10px solid;
+  }
+
+  to {
+    border-right: transparent;
+  }
+}
+
 .code-works-logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);

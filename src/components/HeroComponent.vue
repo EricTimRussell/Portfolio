@@ -61,7 +61,7 @@ export default {
 
 /* Animation */
 .anim-typewriter-name {
-  animation: typewriter-name 1s 1s normal both,
+  animation: typewriter-name 1.5s normal both,
     blinkTextCursor 500ms 6 normal;
 }
 
@@ -87,8 +87,8 @@ export default {
 }
 
 .anim-typewriter-title {
-  animation: typewriter-title 1.5s 4s normal both,
-    blinkTextCursor 500ms 3.2s 8;
+  animation: typewriter-title 1.5s 3s normal both,
+    blinkTextCursor 500ms 2.8s 9;
 }
 
 @keyframes typewriter-title {
@@ -113,7 +113,7 @@ export default {
 
 .anim-typewriter-motto {
   animation: typewriter-motto 3s 8s normal both,
-    blinkTextCursor 500ms 7s 10;
+    blinkTextCursor 500ms 7.2s 10;
 }
 
 @keyframes typewriter-motto {
