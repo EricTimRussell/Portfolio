@@ -1,4 +1,48 @@
-<template></template>
+<template>
+  <section class="container-fluid">
+    <div class="row pt-5">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <h2 class="text-retro fs-xl d-flex letter-space works-title anim-typewriter">My Work</h2>
+        <span class="divider"></span>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a href="https://github.com/EricTimRussell/Tower" target="_blank">
+          <div class="tower">
+            <h6 class="fs-lg px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
+            <img src="../assets/images/WorksBG/Tower.png" class="img-fluid portfolio-img p-3" alt="">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a href="https://github.com/EricTimRussell/Keeper" target="_blank">
+          <div class="keepr">
+            <h6 class="fs-lg px-3 text-retro text-retro-shadow">Keepr Full-Stack Application</h6>
+            <img src="../assets/images/WorksBG/KeeprLogo.png" class="img-fluid portfolio-img p-3" alt="">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a href="https://github.com/EricTimRussell/Smedia" target="_blank">
+          <div class="network">
+            <h6 class="fs-lg px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
+            <img src="../assets/images/WorksBG/Network.png" class="img-fluid portfolio-img-network p-3" alt="">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
+          <h6 class="fs-lg px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
 
 <script>
 export default {
@@ -10,4 +54,111 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  text-decoration: none;
+}
+
+.works-title {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1.7s 1 normal both,
+    blinkTextCursor 500ms infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 11.5rem;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right: #33ff00 10px solid;
+  }
+
+  to {
+    border-right: transparent;
+  }
+}
+
+.tower {
+  height: 40vh;
+  width: 48vh;
+  border-radius: 5px;
+  background-image: url("../assets/images/WorksBG/TowerBG.png");
+  background-size: contain;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.tower:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.keepr {
+  height: 40vh;
+  width: 48vh;
+  border-radius: 5px;
+  background-image: url("../assets/images/WorksBG/KeeprBG.png");
+  background-size: contain;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.keepr:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.riskier {
+  height: 40vh;
+  width: 48vh;
+  border-radius: 5px;
+  background-image: url("../assets/images/WorksBG/RiskierBG.png");
+  background-size: cover;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.riskier:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.network {
+  height: 40vh;
+  width: 48vh;
+  border-radius: 5px;
+  background-image: url("../assets/images/WorksBG/NetworkBG.png");
+  background-size: contain;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.network:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.portfolio-img {
+  height: 15vh;
+  width: 15vh;
+  display: cover;
+}
+
+.portfolio-img-network {
+  height: 9vh;
+  width: 30vh;
+  display: cover;
+}
+</style>

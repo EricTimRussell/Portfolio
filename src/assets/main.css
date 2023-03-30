@@ -3,14 +3,10 @@ main {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-image: url(../assets/images/pipboybackground.jpg);
   background-repeat: none;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* SECTION Navbar */
-.navbar {
-  background-color: #00000084;
-}
-
 .nav-button {
   color: #33ff00;
   background-color: #28282800;
@@ -250,6 +246,10 @@ main {
 
 .text-retro {
   color: #33ff00;
+}
+
+.text-retro-shadow {
+  text-shadow: #1a8000 2px 2px;
 }
 
 .text-shadow {
