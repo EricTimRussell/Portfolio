@@ -16,7 +16,7 @@
         <a class=" d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier version 2">
         </a>
-        <h3 class="text-center">Riskier Fire</h3>
+        <h3 class="text-center fs-lg">Riskier Fire</h3>
       </div>
       <div class="col-12 text-retro text-center">
         <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and

@@ -89,7 +89,7 @@ export default {
 
 .anim-typewriter-title {
   animation: typewriter-title 1.5s 3s normal both,
-    blinkTextCursor 500ms 2.5s 7;
+    blinkTextCursor 500ms 2.5s 6;
 }
 
 @keyframes typewriter-title {

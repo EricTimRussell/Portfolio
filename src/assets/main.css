@@ -2,7 +2,6 @@ body {
   background-color: #00000098;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-image: url(../assets/images/pipboybackground.jpg);
-  /* background-repeat: no-repeat; */
   background-size: contain;
 }
 
@@ -232,15 +231,10 @@ body {
   letter-spacing: 2px;
 }
 
-.paragraph {
-  margin-left: 0%;
-  margin-right: 15%;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .paragraph {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 

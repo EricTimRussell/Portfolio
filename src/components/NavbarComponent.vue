@@ -57,6 +57,12 @@ export default {
 </script>
 
 <style scoped>
+main {
+  background-color: #00000098;
+  background-image: url(../assets/images/pipboybackground.jpg);
+  background-size: contain;
+}
+
 #nav .active-router-link {
   transform: scale(1.2);
   transform: translateY(-.7rem);

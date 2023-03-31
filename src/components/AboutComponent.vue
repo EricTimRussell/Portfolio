@@ -5,15 +5,16 @@
         <h2 class="text-retro fs-xl d-flex letter-space about-title anim-typewriter">ABOUT ME</h2>
         <span class="divider"></span>
       </div>
-      <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
         <img class="px-5 code-works-logo mobile"
           src="https://codeworks.blob.core.windows.net/public/assets/img/cw-logo-circle.png" alt="Boise CodeWorks Logo">
-        <span class="text-retro fs-lg">Class of Fall 2022 <span class="material-symbols-outlined text-retro fs-lg">
+        <h3 class="text-retro fs-lg pt-3"><span class="material-symbols-outlined text-retro fs-lg">
             school
-          </span></span>
+          </span> Class of Fall 2022</h3>
       </div>
-      <div class="col-md-6 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
-        <p class="paragraph text-shadow pt-4"> &nbsp&nbsp My career life began when I graduated from Boise State
+      <div class="col-lg-6 col-md-12 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
+        <p class="paragraph-fs paragraph text-shadow pt-4"> &nbsp&nbsp My career life began when I graduated from Boise
+          State
           University
           with a BS in
           criminal
@@ -86,7 +87,7 @@ export default {
     margin-bottom: .25rem;
   }
 
-  .paragraph {
+  .paragraph-fs {
     font-size: 18px;
   }
 
