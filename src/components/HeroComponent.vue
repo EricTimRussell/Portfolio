@@ -31,7 +31,8 @@
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
         <h2 class="hero-name hero-animation-space anim-typewriter-name">Eric Russell</h2>
         <h3 class="hero-title hero-animation-space anim-typewriter-title">Level 5 - Full-Stack Developer</h3>
-        <p class="letter-space mb-5 hero-motto hero-anim-motto anim-typewriter-motto">I am a full-stack developer
+        <p class="letter-space mb-5 hero-motto hero-anim-motto anim-typewriter-motto hero-anim-motto-mobile">I am a
+          full-stack developer
           with a particular love for Vue.js and C#</p>
       </div>
     </div>
@@ -62,7 +63,7 @@ export default {
 /* Animation */
 .anim-typewriter-name {
   animation: typewriter-name 1.5s normal both,
-    blinkTextCursor 500ms 6 normal;
+    blinkTextCursor 500ms 5 normal;
 }
 
 @keyframes typewriter-name {
@@ -88,7 +89,7 @@ export default {
 
 .anim-typewriter-title {
   animation: typewriter-title 1.5s 3s normal both,
-    blinkTextCursor 500ms 2.8s 9;
+    blinkTextCursor 500ms 2.5s 7;
 }
 
 @keyframes typewriter-title {
@@ -112,8 +113,8 @@ export default {
 }
 
 .anim-typewriter-motto {
-  animation: typewriter-motto 3s 8s normal both,
-    blinkTextCursor 500ms 7.2s 10;
+  animation: typewriter-motto 3s 7s normal both,
+    blinkTextCursor 500ms 5.7s 10;
 }
 
 @keyframes typewriter-motto {
@@ -136,8 +137,42 @@ export default {
   }
 }
 
+@media (max-width: 996px) {
+  @keyframes typewriter-name {
+    from {
+      width: 0;
+    }
 
-@media (max-width: 768px) {
+    to {
+      width: 16rem;
+    }
+  }
+
+  @keyframes typewriter-title {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 36rem;
+    }
+  }
+
+  @keyframes typewriter-motto {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 49rem;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 685px) {
   @keyframes typewriter-name {
     from {
       width: 0;
@@ -167,6 +202,23 @@ export default {
     text-align: left;
   }
 
+  .hero-anim-motto-mobile {
+    -webkit-animation: motto-expand 1s 5s both;
+    animation: motto-expand 1s 5s both;
+  }
+
+  @-webkit-keyframes motto-expand {
+    0% {
+      font-size: 0px;
+    }
+  }
+
+  @keyframes motto-expand {
+    0% {
+      font-size: 0px;
+    }
+  }
+
 }
 
 .header-border {
@@ -190,10 +242,6 @@ export default {
 
   .mobile {
     display: none;
-  }
-
-  .pt-6 {
-    padding-top: 3rem;
   }
 }
 </style>
