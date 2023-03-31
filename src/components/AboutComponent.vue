@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="container-fluid">
+  <section class="container-fluid">
     <div class="row mobile justify-content-center">
       <div class="col-12 d-flex flex-column align-items-center">
         <h2 class="text-retro fs-xl d-flex letter-space about-title anim-typewriter">ABOUT ME</h2>

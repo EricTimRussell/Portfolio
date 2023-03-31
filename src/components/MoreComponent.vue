@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="row justify-content-center" v-if="!isLoading">
-      <div class="col-2 text-retro pt-4">
+      <div class="col-12 text-retro pt-4">
         <h2 class="mx-2 text-center">Current Project</h2>
         <a class=" d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier version 2">

@@ -1,9 +1,9 @@
-main {
+body {
   background-color: #00000098;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-image: url(../assets/images/pipboybackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-size: contain;
 }
 
 /* SECTION Navbar */

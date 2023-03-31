@@ -105,6 +105,14 @@ export default {
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: both;
+  -moz-animation-name: skills-slide;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-name: skills-slide;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
   white-space: nowrap;
   overflow: hidden;
 }

@@ -6,7 +6,7 @@
         <span class="divider"></span>
       </div>
     </div>
-    <div class="row">
+    <div class="row works-expand">
 
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Tower" target="_blank">
@@ -161,6 +161,104 @@ a {
   width: 30vh;
   display: cover;
 }
+
+.works-expand {
+  -webkit-animation: works-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
+  animation: works-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
+}
+
+@-webkit-keyframes works-expand {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.15;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  35% {
+    opacity: 0.35;
+  }
+
+  45% {
+    opacity: 0.45;
+  }
+
+  55% {
+    opacity: 0.55;
+  }
+
+  65% {
+    opacity: 0.65;
+  }
+
+  75% {
+    opcaity: 0.75;
+  }
+
+  85% {
+    opcaity: 0.85;
+  }
+
+  95% {
+    opcaity: 0.95;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes works-expand {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.15;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  35% {
+    opacity: 0.35;
+  }
+
+  45% {
+    opacity: 0.45;
+  }
+
+  55% {
+    opacity: 0.55;
+  }
+
+  65% {
+    opacity: 0.65;
+  }
+
+  75% {
+    opcaity: 0.75;
+  }
+
+  85% {
+    opcaity: 0.85;
+  }
+
+  95% {
+    opcaity: 0.95;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @media (max-width: 1770px) {
   .tower {

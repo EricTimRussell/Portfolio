@@ -1,5 +1,5 @@
 <template>
-  <header id="hero" class="container-fluid">
+  <header class="container-fluid">
     <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
@@ -164,7 +164,7 @@ export default {
 
   .hero-anim-motto {
     white-space: normal;
-    text-align: center;
+    text-align: left;
   }
 
 }
