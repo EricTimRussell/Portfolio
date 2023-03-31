@@ -12,11 +12,13 @@
     </div>
     <div class="row justify-content-center" v-if="!isLoading">
       <div class="col-12 text-retro pt-4">
-        <h2 class="mx-2 text-center">Current Project</h2>
-        <a class=" d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
+        <h2 class="mx-2 text-center">Current Project:</h2>
+        <h3 class="text-center fs-lg">Riskier Fire</h3>
+      </div>
+      <div class="col-2">
+        <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier version 2">
         </a>
-        <h3 class="text-center fs-lg">Riskier Fire</h3>
       </div>
       <div class="col-12 text-retro text-center">
         <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
