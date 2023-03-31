@@ -197,15 +197,15 @@ a {
   }
 
   75% {
-    opcaity: 0.75;
+    opacity: 0.75;
   }
 
   85% {
-    opcaity: 0.85;
+    opacity: 0.85;
   }
 
   95% {
-    opcaity: 0.95;
+    opacity: 0.95;
   }
 
   100% {
@@ -243,15 +243,15 @@ a {
   }
 
   75% {
-    opcaity: 0.75;
+    opacity: 0.75;
   }
 
   85% {
-    opcaity: 0.85;
+    opacity: 0.85;
   }
 
   95% {
-    opcaity: 0.95;
+    opacity: 0.95;
   }
 
   100% {
