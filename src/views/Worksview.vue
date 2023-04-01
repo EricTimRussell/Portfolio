@@ -17,6 +17,6 @@ export default {
 
 <style scoped>
 .works-view {
-  min-height: 93.4vh;
+  min-height: 93.3vh;
 }
 </style>
