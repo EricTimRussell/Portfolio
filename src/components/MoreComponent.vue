@@ -1,8 +1,11 @@
 <template>
+  <header class="sticky-top">
+    <NavbarComponent />
+  </header>
   <section class="container-fluid">
-    <div class="row pt-5">
+    <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space more-title anim-typewriter">WHAT AM I UP TO?</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space">WHAT AM I UP TO?</h2>
         <span class="divider"></span>
       </div>
       <div class="col-12 text-center" v-if="isLoading">
@@ -33,19 +36,19 @@
           <span class="divider"></span>
           <h2 class="mx-2 text-center">Currently Learning or Improving</h2>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
           <h3 class="text-retro fs-lg">Nuxtjs</h3>
           <img title="Nuxtjs" class="logo" src="../assets/images/Skills/Nuxt3.png" alt="Nuxt logo">
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
           <h3 class="text-retro text-center">Pinia State Management</h3>
           <img title="Pinia" class="logo" src="../assets/images/More/piniaJPG.png" alt="Pinia logo">
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
           <h3 class="text-retro fs-lg">TypeScript</h3>
           <img title="Typescript" class="logo" src="../assets/images/More/typescript.png" alt="Typescript logo">
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
           <h3 class="text-retro fs-lg">Vitest Unit Testing</h3>
           <img title="Vitest" class="logo" src="../assets/images/More/vitest.png" alt="Vitest logo">
         </div>
@@ -56,59 +59,29 @@
 
 <script>
 import { ref, onMounted } from "vue";
+import NavbarComponent from "./NavbarComponent.vue";
 
 export default {
   setup() {
-    const isLoading = ref(false)
+    const isLoading = ref(false);
     function pageLoading() {
-      isLoading.value = true
+      isLoading.value = true;
       setTimeout(() => {
-        isLoading.value = false
-      }, 2500)
+        isLoading.value = false;
+      }, 2500);
     }
-
     onMounted(() => {
-      pageLoading()
-    })
+      pageLoading();
+    });
     return {
       isLoading
-    }
-  }
+    };
+  },
+  components: { NavbarComponent }
 }
 </script>
 
 <style scoped>
-.more-title {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 2.5s 1 normal both,
-    blinkTextCursor 500ms infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 22rem;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
-  }
-}
-
 .riskier-2 {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
 }
@@ -146,8 +119,9 @@ export default {
 @media (max-width: 360px) {
   .logo {
     width: 15rem;
-    height: 25rem;
+    height: 20rem;
   }
+
 }
 
 

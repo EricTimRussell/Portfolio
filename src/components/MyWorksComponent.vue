@@ -1,8 +1,11 @@
 <template>
+  <header class="sticky-top">
+    <NavbarComponent />
+  </header>
   <section class="container-fluid">
-    <div class="row pt-5">
+    <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space works-title anim-typewriter">My Work</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space">My Work</h2>
         <span class="divider"></span>
       </div>
     </div>
@@ -11,7 +14,7 @@
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Tower" target="_blank">
           <div class="tower">
-            <h6 class="fs-lg px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
             <img src="../assets/images/WorksBG/Tower.png" class="img-fluid portfolio-img p-3" alt="">
           </div>
         </a>
@@ -20,7 +23,7 @@
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Keeper" target="_blank">
           <div class="keepr">
-            <h6 class="fs-lg px-3 text-retro text-retro-shadow">Keepr Full-Stack Application</h6>
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">Keepr Full-Stack Application</h6>
             <img src="../assets/images/WorksBG/KeeprLogo.png" class="img-fluid portfolio-img p-3" alt="">
           </div>
         </a>
@@ -29,7 +32,7 @@
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Smedia" target="_blank">
           <div class="network">
-            <h6 class="fs-lg px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
             <img src="../assets/images/WorksBG/Network.png" class="img-fluid portfolio-img-network p-3" alt="">
           </div>
         </a>
@@ -37,7 +40,7 @@
 
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
-          <h6 class="fs-lg px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
+          <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
         </a>
       </div>
     </div>
@@ -45,49 +48,19 @@
 </template>
 
 <script>
+import NavbarComponent from "./NavbarComponent.vue";
+
 export default {
   setup() {
-
-
-    return {}
-  }
+    return {};
+  },
+  components: { NavbarComponent }
 }
 </script>
 
 <style scoped>
 a {
   text-decoration: none;
-}
-
-.works-title {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 1.7s 1 normal both,
-    blinkTextCursor 500ms infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 11.5rem;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
-  }
 }
 
 .tower {

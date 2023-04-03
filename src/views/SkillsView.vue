@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 skills-vh">
+  <div class="skills-vh">
     <SkillsComponent />
   </div>
 </template>

@@ -1,14 +1,16 @@
-<script setup>
+<script>
 import { RouterView } from 'vue-router'
 import ContactMeModalComponent from "./components/ContactMeModalComponent.vue";
-import NavbarComponent from "./components/NavbarComponent.vue";
+export default {
+  setup() {
+    return {};
+  },
+  components: { ContactMeModalComponent }
+}
 </script>
 
 <template>
   <body>
-    <header class="sticky-top">
-      <NavbarComponent />
-    </header>
     <main>
       <RouterView />
       <footer class="sticky-bottom text-end">

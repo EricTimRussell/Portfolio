@@ -1,5 +1,5 @@
 <template>
-  <div class="about-view pt-5">
+  <div class="about-view">
     <AboutComponent />
   </div>
 </template>

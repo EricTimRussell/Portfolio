@@ -1,6 +1,6 @@
 body {
   background-color: #00000098;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: monospace, 'Times New Roman', Times, serif;
   background-image: url(../assets/images/pipboybackground.jpg);
   background-size: contain;
 }
@@ -233,8 +233,8 @@ body {
 
 @media (max-width: 820px) {
   .paragraph {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -243,7 +243,9 @@ body {
 }
 
 .text-retro-shadow {
-  text-shadow: #1a8000 2px 2px;
+  text-shadow: #000000 2px 2px;
+  color: #63ff3b;
+  background-color: #0000008f;
 }
 
 .text-shadow {

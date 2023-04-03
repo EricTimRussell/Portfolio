@@ -1,5 +1,35 @@
 <template>
-  <header class="container-fluid">
+  <div class="container-fluid" v-if="isLoading">
+    <div class="row justify-content-center pt-5">
+      <div class="console-container d-flex">
+        <span class="text-secondary px-2">[C:/]Command Prompt</span>
+      </div>
+      <div class="inner-container text-retro flex-column d-flex">
+        <span>Microsoft Windows [Version 2.1.14568.2145]
+          (c) Microsoft Corporation. All rights reserved.</span>
+        <span class="typing-cmd-start cmd-mobile">C:\Users\anonymous> cd /target Eric-Russell</span>
+        <span class="typing-cmd-middle cmd-mobile">C:\Users\anonymous\target npm init target</span><br>
+        <span class="typing-cmd-end-start cmd-mobile">INTIALIZING TARGET PROFILE...</span>
+        <span class="typing-cmd-end-1 cmd-mobile"> Fetching cached dependencies</span>
+        <span class="typing-cmd-end-2 cmd-mobile"> Starting to download cache of 91.5MB</span>
+        <span class="typing-cmd-end-3 cmd-mobile">Finished downloading cache in 788ms</span>
+        <span class="typing-cmd-end-4 cmd-mobile">Starting to extract cache</span>
+        <span class="typing-cmd-end-5 cmd-mobile">Finished extracting cache in 571ms</span>
+        <span class="typing-cmd-end-6 cmd-mobile">Finished fetching cache in 1.402s</span>
+        <span class="typing-cmd-end-7 cmd-mobile">Starting to prepare the repo for build</span>
+        <span class="typing-cmd-end-8 cmd-mobile">Preparing Git Reference refs/heads/master</span>
+        <span class="typing-cmd-end-9 cmd-mobile">Parsing package.json dependencies</span>
+        <span class="typing-cmd-end-10 cmd-mobile">Starting to install dependencies</span>
+        <span class="typing-cmd-end-11 cmd-mobile">Finished processing fetch request in 12.05s</span>
+        <button @click="skipAnimation()" class="text-retro mx-5 btn" title="Skip Animation">SKIP</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky-top">
+    <NavbarComponent v-if="!isLoading" />
+  </header>
+  <section class="container-fluid" v-if="!isLoading">
     <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
@@ -14,13 +44,13 @@
         <span class="status-bar text-retro">JUNIOR</span>
       </div>
     </div>
-  </header>
-  <section class="container-fluid">
+  </section>
+  <section class="container-fluid" v-if="!isLoading">
     <div class="row p-5 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
-        <span class="fs-xl border-thick text-retro  mobile">CSS</span>
-        <span class="fs-xl text-retro px-3 my-3  mobile">SQL</span>
-        <span class="fs-xl text-retro px-3  mobile">VUE</span>
+        <span class="fs-xl border-thick text-retro mobile">CSS</span>
+        <span class="fs-xl text-retro px-3 my-3 mobile">SQL</span>
+        <span class="fs-xl text-retro px-3 mobile">VUE</span>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-12 d-flex justify-content-center pt-5 hero-pipboy-img">
       </div>
@@ -29,9 +59,9 @@
         <p class="fs-lg text-retro text-center">80's Synthwave &nbsp&nbsp X )</p>
       </div>
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
-        <h2 class="hero-name hero-animation-space anim-typewriter-name">Eric Russell</h2>
-        <h3 class="hero-title hero-animation-space anim-typewriter-title">Level 5 - Full-Stack Developer</h3>
-        <p class="letter-space mb-5 hero-motto hero-anim-motto anim-typewriter-motto hero-anim-motto-mobile">I am a
+        <h2 class="hero-name">Eric Russell</h2>
+        <h3 class="hero-title">Level 5 - Full-Stack Developer</h3>
+        <p class="letter-space mb-5 hero-motto">I am a
           full-stack developer
           with a particular love for Vue.js and C#</p>
       </div>
@@ -40,195 +70,281 @@
 </template>
 
 <script>
+import { ref, onMounted } from "vue";
+import NavbarComponent from "./NavbarComponent.vue";
+
 export default {
   setup() {
-
-
-    return {}
-  }
+    const isLoading = ref(false);
+    function pageLoading() {
+      isLoading.value = true;
+      setTimeout(() => {
+        isLoading.value = false;
+      }, 13000);
+    }
+    onMounted(() => {
+      pageLoading();
+    });
+    return {
+      isLoading,
+      skipAnimation() {
+        isLoading.value = false;
+      }
+    };
+  },
+  components: { NavbarComponent }
 }
 </script>
 
 <style scoped>
-.hero-animation-space {
+.console-container {
+  width: 70%;
+  height: 50%;
+  background-color: black;
+}
+
+.inner-container {
+  width: 70%;
+  height: 25rem;
+  background-color: #1a1a1a;
+}
+
+.typing-cmd-start {
+  width: 44ch;
+  animation: typing 2.5s steps(22), blinkCursor .7s step-end 5 normal;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 16px;
 }
 
-.hero-anim-motto {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+    border-right: 3px solid;
+  }
+
+  to {
+    border-color: transparent
+  }
+}
+
+.typing-cmd-middle {
+  width: 43ch;
+  animation: typing-middle 4s 3.5s steps(35) normal both, blinkCursor-middle .7s 3.2s step-end 7;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 16px;
 }
 
-/* Animation */
-.anim-typewriter-name {
-  animation: typewriter-name 1.5s normal both,
-    blinkTextCursor 500ms 5 normal;
-}
-
-@keyframes typewriter-name {
+@keyframes typing-middle {
   from {
     width: 0;
   }
-
-  to {
-    width: 16rem;
-  }
 }
 
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
+@keyframes blinkCursor-middle {
+  50% {
+    border-color: transparent;
+    border-right: 3px solid;
   }
 
   to {
-    border-right: transparent;
+    border-color: transparent
   }
 }
 
-.anim-typewriter-title {
-  animation: typewriter-title 1.5s 3s normal both,
-    blinkTextCursor 500ms 2.5s 6;
+.typing-cmd-end-start {
+  width: 43ch;
+  animation: typing-end .1s 8.1s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
 }
 
-@keyframes typewriter-title {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 36rem;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
-  }
-}
-
-.anim-typewriter-motto {
-  animation: typewriter-motto 3s 7s normal both,
-    blinkTextCursor 500ms 5.7s 10;
-}
-
-@keyframes typewriter-motto {
+@keyframes typing-end {
   from {
     width: 0;
   }
-
-  to {
-    width: 49rem;
-  }
 }
 
-@keyframes blinkTextCursor {
+.typing-cmd-end-1 {
+  width: 43ch;
+  animation: typing-end .1s 8.5s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
   from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
+    width: 0;
   }
 }
 
-@media (max-width: 996px) {
-  @keyframes typewriter-name {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 16rem;
-    }
-  }
-
-  @keyframes typewriter-title {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 36rem;
-    }
-  }
-
-  @keyframes typewriter-motto {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 49rem;
-    }
-  }
-
+.typing-cmd-end-2 {
+  width: 43ch;
+  animation: typing-end .1s 9s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
 }
 
-
-
-@media (max-width: 685px) {
-  @keyframes typewriter-name {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 13.5rem;
-    }
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  @keyframes typewriter-title {
-    from {
-      width: 0;
-    }
+.typing-cmd-end-3 {
+  width: 43ch;
+  animation: typing-end .1s 9.5s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
 
-    to {
-      width: 17rem;
-    }
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  .anim-typewriter-motto {
-    animation: none
+.typing-cmd-end-4 {
+  width: 43ch;
+  animation: typing-end .1s 9.8s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  .hero-anim-motto {
-    white-space: normal;
-    text-align: left;
+.typing-cmd-end-5 {
+  width: 43ch;
+  animation: typing-end .1s 10.3s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  .hero-anim-motto-mobile {
-    -webkit-animation: motto-expand 1s 5s both;
-    animation: motto-expand 1s 5s both;
+.typing-cmd-end-5 {
+  width: 43ch;
+  animation: typing-end .1s 10.5s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  @-webkit-keyframes motto-expand {
-    0% {
-      font-size: 0px;
-    }
+.typing-cmd-end-6 {
+  width: 43ch;
+  animation: typing-end .1s 10.7s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
-  @keyframes motto-expand {
-    0% {
-      font-size: 0px;
-    }
+.typing-cmd-end-7 {
+  width: 43ch;
+  animation: typing-end .1s 10.9s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
   }
+}
 
+.typing-cmd-end-8 {
+  width: 43ch;
+  animation: typing-end .1s 11.3s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
+  }
+}
+
+.typing-cmd-end-9 {
+  width: 43ch;
+  animation: typing-end .1s 11.5s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
+  }
+}
+
+.typing-cmd-end-10 {
+  width: 43ch;
+  animation: typing-end .1s 11.8s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
+  }
+}
+
+.typing-cmd-end-11 {
+  width: 44ch;
+  animation: typing-end .1s 12.05s steps(100) both;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+@keyframes typing-end {
+  from {
+    width: 0;
+  }
 }
 
 .header-border {
   border-top: 5px solid #33ff00;
   border-left: 5px solid #33ff00;
   border-right: 5px solid #33ff00;
-}
-
-.pt-6 {
-  padding-top: 5rem;
 }
 
 .status-bar {
@@ -242,6 +358,20 @@ export default {
 
   .mobile {
     display: none;
+  }
+
+  .console-container {
+    width: 95%;
+    height: 50%;
+  }
+
+  .inner-container {
+    width: 95%;
+    height: 25rem;
+  }
+
+  .cmd-mobile {
+    font-size: 13px;
   }
 }
 </style>

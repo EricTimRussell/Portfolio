@@ -1,8 +1,11 @@
 <template>
+  <header class="sticky-top">
+    <NavbarComponent />
+  </header>
   <section class="container-fluid">
-    <div class="row">
+    <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space skills-title anim-typewriter">PROFICIENCES</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space">PROFICIENCES</h2>
         <span class="divider"></span>
       </div>
     </div>
@@ -46,48 +49,17 @@
 </template>
 
 <script>
+import NavbarComponent from "./NavbarComponent.vue";
+
 export default {
   setup() {
-
-
-    return {}
-  }
+    return {};
+  },
+  components: { NavbarComponent }
 }
 </script>
 
 <style scoped>
-.skills-title {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 1.5s 1 normal both,
-    blinkTextCursor 500ms infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 17.5rem;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
-  }
-}
-
-
 .logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);
@@ -103,15 +75,15 @@ export default {
 .anim-slide {
   animation-name: skills-slide;
   animation-duration: 3s;
-  animation-delay: 2s;
+  animation-delay: .5s;
   animation-fill-mode: both;
   -moz-animation-name: skills-slide;
   -moz-animation-duration: 3s;
-  -moz-animation-delay: 2s;
+  -moz-animation-delay: .5s;
   -moz-animation-fill-mode: both;
   -webkit-animation-name: skills-slide;
   -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: .5s;
   -webkit-animation-fill-mode: both;
   white-space: nowrap;
   overflow: hidden;

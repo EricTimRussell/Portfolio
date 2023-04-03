@@ -1,18 +1,21 @@
 <template>
+  <header>
+    <NavbarComponent />
+  </header>
   <section class="container-fluid">
-    <div class="row mobile justify-content-center">
+    <div class="row mobile justify-content-center pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space about-title anim-typewriter">ABOUT ME</h2>
+        <h2 class="text-retro fs-xl d-flex letter-space">ABOUT ME</h2>
         <span class="divider"></span>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
+      <div class="col-lg-5 col-md-6 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
         <img class="px-5 code-works-logo mobile"
           src="https://codeworks.blob.core.windows.net/public/assets/img/cw-logo-circle.png" alt="Boise CodeWorks Logo">
-        <h3 class="text-retro fs-lg pt-3"><span class="material-symbols-outlined text-retro fs-lg">
+        <h3 class="text-retro fs-md pt-3"><span class="material-symbols-outlined text-retro fs-lg">
             school
           </span> Class of Fall 2022</h3>
       </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
+      <div class="col-lg-5 col-md-12 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
         <p class="paragraph-fs paragraph text-shadow pt-4"> &nbsp&nbsp My career life began when I graduated from Boise
           State
           University
@@ -31,47 +34,17 @@
 </template>
 
 <script>
+import NavbarComponent from "./NavbarComponent.vue";
+
 export default {
   setup() {
-
-
-    return {}
-  }
+    return {};
+  },
+  components: { NavbarComponent }
 }
 </script>
 
 <style scoped>
-.about-title {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 1.5s 1 normal both,
-    blinkTextCursor 500ms infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 12.5rem;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right: #33ff00 10px solid;
-  }
-
-  to {
-    border-right: transparent;
-  }
-}
-
 .code-works-logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);
@@ -88,7 +61,7 @@ export default {
   }
 
   .paragraph-fs {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .mobile {
