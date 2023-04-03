@@ -12,6 +12,12 @@
     <div class="row works-expand">
 
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
+          <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Tower" target="_blank">
           <div class="tower">
             <h6 class="fs-md px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
@@ -38,11 +44,6 @@
         </a>
       </div>
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
-        <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
-          <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
-        </a>
-      </div>
     </div>
   </section>
 </template>
