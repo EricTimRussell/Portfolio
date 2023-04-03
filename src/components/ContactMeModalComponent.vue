@@ -32,15 +32,15 @@
         <a href="https://github.com/EricTimRussell" target="_blank" title="GitHub"></a>
         <h4>GitHub Profile</h4>
         <a href="https://github.com/EricTimRussell" target="_blank">
-          <p>https://github.com/EricTimRussell</p>
+          <p class="fs-sm">https://github.com/EricTimRussell</p>
         </a>
       </div>
 
       <div class="p-3">
-        <a href="https://www.linkedin.com/in/eric-tim-russell/" target="_blank" title="Linkedin" class="linkedin"></a>
+        <a href="https://www.linkedin.com/in/eric-tim-russell/" target="_blank" title="Linkedin"></a>
         <h4>Linkedin Profile</h4>
         <a href="https://www.linkedin.com/in/eric-tim-russell/" target="_blank">
-          <p>https://www.linkedin.com/in/eric-tim-russell/</p>
+          <p class="fs-sm">https://www.linkedin.com/in/eric-tim-russell/</p>
         </a>
       </div>
 
