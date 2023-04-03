@@ -371,7 +371,7 @@ export default {
   }
 
   .cmd-mobile {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 </style>

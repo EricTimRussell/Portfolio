@@ -5,7 +5,7 @@
   <section class="container-fluid">
     <div class="row mobile justify-content-center pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space">ABOUT ME</h2>
+        <h2 class="text-retro fs-lg d-flex letter-space">ABOUT ME</h2>
         <span class="divider"></span>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">

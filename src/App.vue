@@ -14,8 +14,8 @@ export default {
     <main>
       <RouterView />
       <footer class="sticky-bottom text-end">
-        <button class="contact-button m-4" title="Contact" data-bs-toggle="modal" data-bs-target="#contactModal"><span
-            class="material-symbols-outlined text-retro fs-lg">
+        <button class="contact-button mx-4 mb-2" title="Contact" data-bs-toggle="modal"
+          data-bs-target="#contactModal"><span class="material-symbols-outlined text-retro fs-lg">
             smartphone
           </span></button>
       </footer>

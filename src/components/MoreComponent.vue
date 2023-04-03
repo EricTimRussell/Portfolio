@@ -5,15 +5,11 @@
   <section class="container-fluid">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space">WHAT AM I UP TO?</h2>
+        <h2 class="text-retro fs-md d-flex letter-space">WHAT I AM DOING</h2>
         <span class="divider"></span>
       </div>
-      <div class="col-12 text-center" v-if="isLoading">
-        <span class="text-retro fs-xl">Loading<i class="spinner-grow text-retro" role="status"></i><i
-            class="spinner-grow text-retro" role="status"></i><i class="spinner-grow text-retro" role="status"></i></span>
-      </div>
     </div>
-    <div class="row justify-content-center" v-if="!isLoading">
+    <div class="row justify-content-center">
       <div class="col-12 text-retro pt-4">
         <h2 class="mx-2 text-center">Current Project:</h2>
         <h3 class="text-center fs-lg">Riskier Fire</h3>
@@ -30,7 +26,7 @@
           It will also utilize Google Firebase for my backend and database.</p>
       </div>
     </div>
-    <div class="row" v-if="!isLoading">
+    <div class="row">
       <div class="row pt-5">
         <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
           <span class="divider"></span>
@@ -63,18 +59,7 @@ import NavbarComponent from "./NavbarComponent.vue";
 
 export default {
   setup() {
-    const isLoading = ref(false);
-    function pageLoading() {
-      isLoading.value = true;
-      setTimeout(() => {
-        isLoading.value = false;
-      }, 2500);
-    }
-    onMounted(() => {
-      pageLoading();
-    });
     return {
-      isLoading
     };
   },
   components: { NavbarComponent }

@@ -5,7 +5,7 @@
   <section class="container-fluid">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-xl d-flex letter-space">PROFICIENCES</h2>
+        <h2 class="text-retro fs-lg d-flex letter-space">PROFICIENCES</h2>
         <span class="divider"></span>
       </div>
     </div>
