@@ -5,12 +5,12 @@
         <span class="text-secondary px-2">[C:/]Command Prompt</span>
       </div>
       <div class="inner-container text-retro flex-column d-flex">
-        <span>Microsoft Windows [Version 2.1.14568.2145]
-          (c) Microsoft Corporation. All rights reserved.</span>
-        <span class="typing-cmd-start cmd-mobile">C:\Users\anonymous> cd /target Eric-Russell</span>
-        <span class="typing-cmd-middle cmd-mobile">C:\Users\anonymous\target npm init target</span><br>
-        <span class="typing-cmd-end-start cmd-mobile">INTIALIZING TARGET PROFILE...</span>
-        <span class="typing-cmd-end-1 cmd-mobile"> Fetching cached dependencies</span>
+        <span>ROBCO [Version 41.10]
+          (c) ROBCO CORPORATION. All rights reserved.</span>
+        <span class="typing-cmd-start cmd-mobile">C:\EXEC\HOLOTAPE> NPM LOAD ROM(1) </span>
+        <span class="typing-cmd-middle cmd-mobile">C:\EXEC\HOLOTAPE>CMD ERROR RUN OVERRIDE</span><br>
+        <span class="typing-cmd-end-start cmd-mobile">INTIALIZING HOLOTAPE PROFILE...</span>
+        <span class="typing-cmd-end-1 cmd-mobile"> LOAD ROM(!): DEITRIX 303</span>
         <span class="typing-cmd-end-2 cmd-mobile"> Starting to download cache of 91.5MB</span>
         <span class="typing-cmd-end-3 cmd-mobile">Finished downloading cache in 788ms</span>
         <span class="typing-cmd-end-4 cmd-mobile">Starting to extract cache</span>
@@ -110,7 +110,7 @@ export default {
 }
 
 .typing-cmd-start {
-  width: 44ch;
+  width: 34ch;
   animation: typing 2.5s steps(22), blinkCursor .7s step-end 5 normal;
   white-space: nowrap;
   overflow: hidden;
@@ -135,7 +135,7 @@ export default {
 }
 
 .typing-cmd-middle {
-  width: 43ch;
+  width: 40ch;
   animation: typing-middle 4s 3.5s steps(35) normal both, blinkCursor-middle .7s 3.2s step-end 7;
   white-space: nowrap;
   overflow: hidden;
