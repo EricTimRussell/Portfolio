@@ -1,7 +1,8 @@
 <template>
   <div class="container-fluid" v-if="isLoading">
     <div class="row justify-content-center pt-5">
-      <div class="console-container d-flex">
+      <div class="console-container d-flex flex-column">
+        <h1 class="text-retro">Loading Resume...</h1>
         <span class="text-secondary px-2">[C:/]Command Prompt</span>
       </div>
       <div class="inner-container text-retro flex-column d-flex">

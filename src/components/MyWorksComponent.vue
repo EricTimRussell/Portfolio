@@ -12,6 +12,12 @@
     <div class="row works-expand">
 
       <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+        <a class="riskierFire" href="https://github.com/EricTimRussell/riskierFire" target="_blank">
+          <h6 class="fs-md px-3 text-retro text-retro-shadow">RiskierFire Full-Stack Application</h6>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
         <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
           <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
         </a>
@@ -104,6 +110,21 @@ a {
 }
 
 .riskier:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.riskierFire {
+  height: 40vh;
+  width: 48vh;
+  border-radius: 5px;
+  background-image: url("../assets/images/WorksBG/RiskierFire.png");
+  background-size: cover;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.riskierFire:hover {
   color: #1f5297;
   text-shadow: wheat 2px 1px;
   transform: scale(1.1);
