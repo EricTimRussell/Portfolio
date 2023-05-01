@@ -11,19 +11,25 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 text-retro pt-4">
-        <h2 class="mx-2 text-center">Current Project:</h2>
-        <h3 class="text-center fs-lg">Riskier Fire</h3>
+        <h2 class="mx-2 text-center">Current Projects:</h2>
+        <h3 class="text-center fs-lg">Riskier Fire & Get Outside Photography</h3>
       </div>
       <div class="col-2">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
-          <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier version 2">
+          <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier logo">
+        </a>
+      </div>
+      <div class="col-2">
+        <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
+          <img class="photo-logo my-4" src="../assets/images/More/Get Outside Photography-1.png"
+            alt="get outside photography logo">
         </a>
       </div>
       <div class="col-12 text-retro text-center">
         <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
           board
-          game.
-          It will also utilize Google Firebase for my backend and database.</p>
+          game. Get Outside Photography is a dynamic photography portfolio page that the owner can edit and change
+          dynamically.</p>
       </div>
     </div>
     <div class="row">
@@ -67,6 +73,17 @@ export default {
 </script>
 
 <style scoped>
+.photo-logo {
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  width: 11.5rem;
+  height: auto;
+}
+
+.photo-logo:hover {
+  transform: scale(1.1);
+
+}
+
 .riskier-2 {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
 }
