@@ -21,7 +21,7 @@
       </div>
       <div class="col-2">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
-          <img class="photo-logo my-4" src="../assets/images/More/Get Outside Photography-1.png"
+          <img class="photo-logo my-4" src="../assets/images/More/Get_Outside_Photography.png"
             alt="get outside photography logo">
         </a>
       </div>
