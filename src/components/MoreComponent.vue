@@ -19,6 +19,10 @@
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier logo">
         </a>
       </div>
+      <div class="col-12 text-retro text-center">
+        <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
+          board game.</p>
+      </div>
       <div class="col-12 col-md-4 col-sm-6">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
           <img class="photo-logo my-4" src="../assets/images/More/Get_Outside_Photography.png"
@@ -26,14 +30,13 @@
         </a>
       </div>
       <div class="col-12 text-retro text-center">
-        <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
-          board
-          game. Get Outside Photography is a dynamic photography portfolio page that the owner can edit and change
+        <p class="fs-md mx-1 p-accessible">Get Outside Photography is a dynamic photography portfolio page that the owner
+          can edit and change
           dynamically.</p>
       </div>
     </div>
     <div class="row">
-      <div class="row pt-5">
+      <div class="row pt-4">
         <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
           <span class="divider"></span>
           <h2 class="mx-2 text-center">Currently Learning or Improving</h2>
