@@ -275,5 +275,10 @@ a {
     height: 30vh;
     width: 30vh;
   }
+
+  .riskierFire {
+    height: 30vh;
+    width: 30vh;
+  }
 }
 </style>

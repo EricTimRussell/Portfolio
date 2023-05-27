@@ -14,12 +14,12 @@
         <h2 class="mx-2 text-center">Current Projects:</h2>
         <h3 class="text-center fs-lg">Riskier Fire & Get Outside Photography</h3>
       </div>
-      <div class="col-2">
+      <div class="col-12 col-md-4 col-sm-6">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
           <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier logo">
         </a>
       </div>
-      <div class="col-2">
+      <div class="col-12 col-md-4 col-sm-6">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
           <img class="photo-logo my-4" src="../assets/images/More/Get_Outside_Photography.png"
             alt="get outside photography logo">
