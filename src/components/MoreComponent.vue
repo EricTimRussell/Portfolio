@@ -62,6 +62,10 @@
           <h3 class="text-retro fs-lg">Vitest Unit Testing</h3>
           <img title="Vitest" class="logo" src="../assets/images/More/vitest.png" alt="Vitest logo">
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
+          <h3 class="text-retro fs-lg">Shopify</h3>
+          <img title="Shopify" class="logo" src="../assets/images/More/shopifyLogo.png" alt="Shopify logo">
+        </div>
       </div>
     </div>
   </section>
