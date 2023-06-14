@@ -20,8 +20,9 @@
         </a>
       </div>
       <div class="col-12 text-retro text-center">
-        <p class="fs-md mx-1 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
-          board game.</p>
+        <p class="fs-md px-4 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
+          board game. I have modelled and 3d printed most of my physical pieces. I am currently play testing and refining
+          the riskier app and rules.</p>
       </div>
       <div class="col-12 col-md-4 col-sm-6">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
@@ -30,9 +31,13 @@
         </a>
       </div>
       <div class="col-12 text-retro text-center">
-        <p class="fs-md mx-1 p-accessible">Get Outside Photography is a dynamic photography portfolio page that the owner
+        <p class="fs-md px-4 p-accessible">Get Outside Photography is a dynamic photography portfolio page that the owner
           can edit and change
-          dynamically.</p>
+          dynamically. It also will be connected to Shopify and the Pixels Shopify app which enables the owner to add and
+          modify
+          their stores products. Get Outside Photography will be seperated into two parts. The first part is the gallery
+          website where users can view and read about all the collections of photos. The second part will be the actual
+          market website where customers can purchase photography prints on several different kinds of mediums.</p>
       </div>
     </div>
     <div class="row">
