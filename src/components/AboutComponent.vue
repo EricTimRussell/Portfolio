@@ -23,11 +23,12 @@
           criminal
           justice. Shortly
           after graduating I learned that the world of law enforcement was not for me. I found myself working in the
-          logistics industry for 5 years, but it was not a fulfilling career path. I discoverd software development
+          logistics industry, but it was not a fulfilling career path. I discoverd software development
           from
           a simple Udemy course on javascript and after that I knew it was what I wanted to pursue. After a grueling
           13-week software development bootcamp with CodeWorks Boise, I have gained the confidence and skills needed
-          to pursue my developer goals.</p>
+          to pursue my developer goals. Currently I spend alot of my free time learning the Vue/Nuxt ecosystem and Google
+          Firebase.</p>
       </div>
     </div>
   </section>
