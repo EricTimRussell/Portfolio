@@ -13,7 +13,7 @@
           src="https://codeworks.blob.core.windows.net/public/assets/img/cw-logo-circle.png" alt="Boise CodeWorks Logo">
         <h3 class="text-retro fs-md pt-3"><span class="material-symbols-outlined text-retro fs-lg">
             school
-          </span> Class of Fall 2022</h3>
+          </span> Class of Fall '22</h3>
       </div>
       <div class="col-lg-5 col-md-12 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
         <p class="paragraph-fs paragraph text-shadow pt-4"> &nbsp&nbsp My career life began when I graduated from Boise

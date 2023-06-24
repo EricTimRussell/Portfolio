@@ -41,38 +41,34 @@
       </div>
     </div>
     <div class="row">
-      <div class="row pt-4">
-        <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
-          <span class="divider"></span>
-          <h2 class="mx-2 text-center">Currently Learning or Improving</h2>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
-          <h3 class="text-retro fs-lg">Nuxtjs</h3>
-          <img title="Nuxtjs" class="logo" src="../assets/images/Skills/Nuxt3.png" alt="Nuxt logo">
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
-          <h3 class="text-retro text-center">Pinia State Management</h3>
-          <img title="Pinia" class="logo" src="../assets/images/More/piniaJPG.png" alt="Pinia logo">
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
-          <h3 class="text-retro fs-lg">TypeScript</h3>
-          <img title="Typescript" class="logo" src="../assets/images/More/typescript.png" alt="Typescript logo">
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
-          <h3 class="text-retro fs-lg">Vitest Unit Testing</h3>
-          <img title="Vitest" class="logo" src="../assets/images/More/vitest.png" alt="Vitest logo">
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
-          <h3 class="text-retro fs-lg">Shopify</h3>
-          <img title="Shopify" class="logo" src="../assets/images/More/shopifyLogo.png" alt="Shopify logo">
-        </div>
+      <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
+        <span class="divider"></span>
+        <h2 class="mx-2 text-center">Currently Learning or Improving</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center py-4">
+      <div class="col-12 eco-logo">
+        <h3 class="text-light text-end">The Vue Ecosystem</h3>
+      </div>
+    </div>
+    <div class="row pt-4">
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
+        <h3 class="text-retro fs-lg">Nuxtjs</h3>
+        <img title="Nuxtjs" class="logo" src="../assets/images/Skills/Nuxt3.png" alt="Nuxt logo">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
+        <h3 class="text-retro fs-lg">PHP</h3>
+        <img title="PHP" class="logo" src="../assets/images/More/php.png" alt="PHP logo">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-4">
+        <h3 class="text-retro fs-lg">Shopify</h3>
+        <img title="Shopify" class="logo" src="../assets/images/More/shopifyLogo.png" alt="Shopify logo">
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
 import NavbarComponent from "./NavbarComponent.vue";
 
 export default {
@@ -112,12 +108,26 @@ export default {
   padding: 2rem;
 }
 
+.eco-logo {
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  background: linear-gradient(#33ff003e, #33ff003e);
+  background-image: url(../assets/images/More/VueEcosystem.png);
+  width: 75rem;
+  height: 30rem;
+  padding: 2rem;
+}
+
 .logo:hover {
   background: linear-gradient(#33ff0097, #33ff0097);
 }
 
 @media (max-width: 1600px) {
   .logo {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .eco-logo {
     width: 20rem;
     height: 30rem;
   }
