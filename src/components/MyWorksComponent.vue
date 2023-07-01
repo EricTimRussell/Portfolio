@@ -2,7 +2,7 @@
   <header class="sticky-top">
     <NavbarComponent />
   </header>
-  <section class="container-fluid">
+  <section class="container-fluid blink">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
         <h2 class="text-retro fs-lg d-flex letter-space">My Work</h2>
@@ -11,19 +11,19 @@
     </div>
     <div class="row works-expand">
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a class="riskierFire" href="https://github.com/EricTimRussell/riskierFire" target="_blank">
           <h6 class="fs-md px-3 text-retro text-retro-shadow">RiskierFire Full-Stack Application</h6>
         </a>
       </div>
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
           <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
         </a>
       </div>
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Tower" target="_blank">
           <div class="tower">
             <h6 class="fs-md px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
@@ -32,7 +32,7 @@
         </a>
       </div>
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Keeper" target="_blank">
           <div class="keepr">
             <h6 class="fs-md px-3 text-retro text-retro-shadow">Keepr Full-Stack Application</h6>
@@ -41,7 +41,7 @@
         </a>
       </div>
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-5 d-flex justify-content-center">
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a href="https://github.com/EricTimRussell/Smedia" target="_blank">
           <div class="network">
             <h6 class="fs-md px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
@@ -66,13 +66,23 @@ export default {
 </script>
 
 <style scoped>
+.blink {
+  animation: blinker .1s step-start 4;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 a {
   text-decoration: none;
 }
 
 .tower {
-  height: 40vh;
-  width: 48vh;
+  height: 36vh;
+  width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/TowerBG.png");
   background-size: contain;
@@ -86,8 +96,8 @@ a {
 }
 
 .keepr {
-  height: 40vh;
-  width: 48vh;
+  height: 36vh;
+  width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/KeeprBG.png");
   background-size: contain;
@@ -101,8 +111,8 @@ a {
 }
 
 .riskier {
-  height: 40vh;
-  width: 48vh;
+  height: 36vh;
+  width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/RiskierBG.png");
   background-size: cover;
@@ -116,8 +126,8 @@ a {
 }
 
 .riskierFire {
-  height: 40vh;
-  width: 48vh;
+  height: 36vh;
+  width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/RiskierFire.png");
   background-size: cover;
@@ -131,8 +141,8 @@ a {
 }
 
 .network {
-  height: 40vh;
-  width: 48vh;
+  height: 36vh;
+  width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/NetworkBG.png");
   background-size: contain;

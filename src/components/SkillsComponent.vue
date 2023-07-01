@@ -9,38 +9,38 @@
         <span class="divider"></span>
       </div>
     </div>
-    <div class="row pb-5 anim-slide">
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+    <div class="row pb-5 blink">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">Javascript</h3>
         <img title="Javascript" class="logo" src="../assets/images/Skills/javascript.png" alt="javascript logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">BootStrap 5</h3>
         <img title="Bootstrap" class="logo" src="../assets/images/Skills/bootstrap.png" alt="BootStrap logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">Vuejs</h3>
         <img title="VueJs" class="logo" src="../assets/images/Skills/vue.png" alt="vue javascript logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">Nuxtjs</h3>
         <img title="Nuxtjs" class="logo" src="../assets/images/Skills/Nuxt3.png" alt="Nuxt logo">
       </div>
     </div>
-    <div class="row anim-slide pb-5">
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+    <div class="row blink pb-5">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">C Sharp</h3>
         <img title="CSharp" class="logo" src="../assets/images/Skills/c-sharp.png" alt="C sharp logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">DotNet</h3>
         <img title="DotNet" class="logo" src="../assets/images/Skills/dotnet.png" alt="dot net logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">MySQL</h3>
         <img title="MySQL" class="logo" src="../assets/images/Skills/mysql.png" alt="my SQL logo">
       </div>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-3">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center py-2">
         <h3 class="text-retro fs-lg">Google Firebase</h3>
         <img title="Google Firebase" class="logo" src="../assets/images/Skills/firebase_logo.png" alt="firebase logo">
       </div>
@@ -60,6 +60,16 @@ export default {
 </script>
 
 <style scoped>
+.blink {
+  animation: blinker .1s step-start 3;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);
@@ -72,7 +82,7 @@ export default {
   background: linear-gradient(#33ff0097, #33ff0097);
 }
 
-.anim-slide {
+/* .anim-slide {
   animation-name: skills-slide;
   animation-duration: 3s;
   animation-delay: .5s;
@@ -97,7 +107,7 @@ export default {
   to {
     width: 100%;
   }
-}
+} */
 
 @media (max-width: 1375px) {
   .logo {

@@ -2,7 +2,7 @@
   <header class="sticky-top">
     <NavbarComponent />
   </header>
-  <section class="container-fluid">
+  <section class="container-fluid blink">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
         <h2 class="text-retro fs-md d-flex letter-space">WHAT I AM DOING</h2>
@@ -81,6 +81,16 @@ export default {
 </script>
 
 <style scoped>
+.blink {
+  animation: blinker .1s step-start 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .photo-logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   width: 11.5rem;

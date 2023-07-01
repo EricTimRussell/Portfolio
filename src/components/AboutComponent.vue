@@ -2,7 +2,7 @@
   <header>
     <NavbarComponent />
   </header>
-  <section class="container-fluid">
+  <section class="container-fluid blink">
     <div class="row mobile justify-content-center pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
         <h2 class="text-retro fs-lg d-flex letter-space">ABOUT ME</h2>
@@ -46,6 +46,16 @@ export default {
 </script>
 
 <style scoped>
+.blink {
+  animation: blinker .1s step-start 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .code-works-logo {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
   background: linear-gradient(#33ff003e, #33ff003e);

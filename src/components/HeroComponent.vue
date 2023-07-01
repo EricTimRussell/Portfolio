@@ -6,6 +6,7 @@
         <span class="text-secondary px-2">[C:/]Command Prompt</span>
       </div>
       <div class="inner-container text-retro flex-column d-flex">
+        <span>******* PIP-OS(R) V7.1.0.8 *******</span>
         <span>ROBCO [Version 41.10]
           (c) ROBCO CORPORATION. All rights reserved.</span>
         <span class="typing-cmd-start cmd-mobile">C:\EXEC\HOLOTAPE> NPM LOAD ROM(1) </span>
@@ -30,7 +31,7 @@
   <header class="sticky-top">
     <NavbarComponent v-if="!isLoading" />
   </header>
-  <section class="container-fluid" v-if="!isLoading">
+  <section class="container-fluid flicker-animation blink" v-if="!isLoading">
     <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
@@ -46,7 +47,7 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid" v-if="!isLoading">
+  <section class="container-fluid flicker-animation blink" v-if="!isLoading">
     <div class="row p-5 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro mobile">CSS</span>
@@ -98,6 +99,16 @@ export default {
 </script>
 
 <style scoped>
+.blink {
+  animation: blinker .1s step-start 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .console-container {
   width: 70%;
   height: 50%;
