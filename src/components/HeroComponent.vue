@@ -303,62 +303,6 @@ export default {
   }
 }
 
-.typing-cmd-end-8 {
-  width: 43ch;
-  animation: typing-end .1s 11.3s steps(100) both;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 16px;
-}
-
-@keyframes typing-end {
-  from {
-    width: 0;
-  }
-}
-
-.typing-cmd-end-9 {
-  width: 43ch;
-  animation: typing-end .1s 11.5s steps(100) both;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 16px;
-}
-
-@keyframes typing-end {
-  from {
-    width: 0;
-  }
-}
-
-.typing-cmd-end-10 {
-  width: 43ch;
-  animation: typing-end .1s 11.8s steps(100) both;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 16px;
-}
-
-@keyframes typing-end {
-  from {
-    width: 0;
-  }
-}
-
-.typing-cmd-end-11 {
-  width: 44ch;
-  animation: typing-end .1s 12.05s steps(100) both;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 16px;
-}
-
-@keyframes typing-end {
-  from {
-    width: 0;
-  }
-}
-
 .header-border {
   border-top: 5px solid #33ff00;
   border-left: 5px solid #33ff00;
