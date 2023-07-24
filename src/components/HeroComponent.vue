@@ -18,13 +18,12 @@
         <span class="typing-cmd-end-4 cmd-mobile">Starting to extract cache</span>
         <span class="typing-cmd-end-5 cmd-mobile">Finished extracting cache in 571ms</span>
         <span class="typing-cmd-end-6 cmd-mobile">Finished fetching cache in 1.402s</span>
-        <span class="typing-cmd-end-7 cmd-mobile">Starting to prepare the repo for build</span>
-        <span class="typing-cmd-end-8 cmd-mobile">Preparing Git Reference refs/heads/master</span>
-        <span class="typing-cmd-end-9 cmd-mobile">Parsing package.json dependencies</span>
-        <span class="typing-cmd-end-10 cmd-mobile">Starting to install dependencies</span>
-        <span class="typing-cmd-end-11 cmd-mobile">Finished processing fetch request in 12.05s</span>
-        <button @click="skipAnimation()" class="text-retro mx-5 btn" title="Skip Animation">SKIP</button>
+        <div class="col-12 d-flex justify-content-center">
+          <img class="typing-cmd-end-7 pipboy-gif" src="../assets/images/fallout-fingerGuns.gif"
+            alt="pipboy finger guns gif">
+        </div>
       </div>
+      <button @click="skipAnimation()" class="text-retro mx-5 btn" title="Skip Animation">SKIP</button>
     </div>
   </div>
 
@@ -119,6 +118,13 @@ export default {
   width: 70%;
   height: 25rem;
   background-color: #1a1a1a;
+}
+
+.pipboy-gif {
+  height: auto;
+  max-width: 19rem;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .typing-cmd-start {
