@@ -27,7 +27,8 @@
           from
           a simple Udemy course on javascript and after that I knew it was what I wanted to pursue. After a grueling
           13-week software development bootcamp with CodeWorks Boise, I have gained the confidence and skills needed
-          to pursue my developer goals. Currently I spend alot of my free time learning the Vue/Nuxt ecosystem and Google
+          to pursue my developer goals. Currently I spend alot of my free time learning the Vue ecosystem, Larvel/PHP and
+          Google
           Firebase.</p>
       </div>
     </div>

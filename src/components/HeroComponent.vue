@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" v-if="isLoading">
+  <!-- <div class="container-fluid" v-if="isLoading">
     <div class="row justify-content-center pt-5">
       <div class="console-container d-flex flex-column">
         <h1 class="text-retro">Loading Resume...</h1>
@@ -25,12 +25,12 @@
       </div>
       <button @click="skipAnimation()" class="text-retro mx-5 btn" title="Skip Animation">SKIP</button>
     </div>
-  </div>
+  </div> -->
 
   <header class="sticky-top">
-    <NavbarComponent v-if="!isLoading" />
+    <NavbarComponent />
   </header>
-  <section class="container-fluid flicker-animation blink" v-if="!isLoading">
+  <section class="container-fluid flicker-animation blink">
     <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
@@ -46,7 +46,7 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid flicker-animation blink" v-if="!isLoading">
+  <section class="container-fluid flicker-animation blink">
     <div class="row p-5 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro mobile">CSS</span>
