@@ -9,7 +9,7 @@
         <span class="divider"></span>
       </div>
     </div>
-    <div class="row works-expand">
+    <div class="row">
 
       <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
         <span class="fs-lg">My Vuejs, C#/.Net Full-Stack Apps</span>
@@ -60,7 +60,6 @@
           </div>
         </a>
       </div>
-
 
       <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
         <span class="fs-lg">My Vuejs & Laravel Fullstack App</span>
@@ -169,8 +168,7 @@ a {
   width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/GetOutside-Thumbnail.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
 }
 
@@ -184,7 +182,7 @@ a {
   height: 36vh;
   width: 44vh;
   border-radius: 5px;
- background-image: url("../assets/images/WorksBG/GregsListUnderConstruction.png");
+  background-image: url("../assets/images/WorksBG/GregsListUnderConstruction.png");
   background-size: contain;
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
 }
@@ -205,99 +203,6 @@ a {
   -webkit-animation: works-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
   animation: works-expand 1.5s cubic-bezier(0.225, 0.600, 0.350, 1.000) both;
 }
-
-@-webkit-keyframes works-expand {
-  0% {
-    opacity: 0;
-  }
-
-  15% {
-    opacity: 0.15;
-  }
-
-  25% {
-    opacity: 0.25;
-  }
-
-  35% {
-    opacity: 0.35;
-  }
-
-  45% {
-    opacity: 0.45;
-  }
-
-  55% {
-    opacity: 0.55;
-  }
-
-  65% {
-    opacity: 0.65;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  85% {
-    opacity: 0.85;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes works-expand {
-  0% {
-    opacity: 0;
-  }
-
-  15% {
-    opacity: 0.15;
-  }
-
-  25% {
-    opacity: 0.25;
-  }
-
-  35% {
-    opacity: 0.35;
-  }
-
-  45% {
-    opacity: 0.45;
-  }
-
-  55% {
-    opacity: 0.55;
-  }
-
-  65% {
-    opacity: 0.65;
-  }
-
-  75% {
-    opacity: 0.75;
-  }
-
-  85% {
-    opacity: 0.85;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 
 @media (max-width: 1770px) {
   .tower {
@@ -321,6 +226,16 @@ a {
   }
 
   .riskierFire {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .get-outside-photo{
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .gregs-list{
     height: 30vh;
     width: 30vh;
   }
