@@ -5,30 +5,20 @@
   <section class="container-fluid blink">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-lg d-flex letter-space">My Work</h2>
+        <h1 class="text-retro d-flex letter-space">My Works</h1>
         <span class="divider"></span>
       </div>
     </div>
     <div class="row works-expand">
 
-      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-        <a class="riskierFire" href="https://github.com/EricTimRussell/riskierFire" target="_blank">
-          <h6 class="fs-md px-3 text-retro text-retro-shadow">RiskierFire Full-Stack Application</h6>
-        </a>
+      <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
+        <span class="fs-lg">My Vuejs, C#/.Net Full-Stack Apps</span>
+        <span class="divider"></span>
       </div>
 
       <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
         <a class="riskier" href="https://github.com/EricTimRussell/riskier" target="_blank">
           <h6 class="fs-md px-3 text-retro text-retro-shadow">Riskier Full-Stack Application</h6>
-        </a>
-      </div>
-
-      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-        <a href="https://github.com/EricTimRussell/Tower" target="_blank">
-          <div class="tower">
-            <h6 class="fs-md px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
-            <img src="../assets/images/WorksBG/Tower.png" class="img-fluid portfolio-img p-3" alt="">
-          </div>
         </a>
       </div>
 
@@ -41,11 +31,45 @@
         </a>
       </div>
 
+      <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
+        <span class="fs-lg">My Vuejs and NodeJs Full-Stack App</span>
+        <span class="divider"></span>
+      </div>
       <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-        <a href="https://github.com/EricTimRussell/Smedia" target="_blank">
-          <div class="network">
-            <h6 class="fs-md px-3 text-retro text-retro-shadow">The Network Vue.js</h6>
-            <img src="../assets/images/WorksBG/Network.png" class="img-fluid portfolio-img-network p-3" alt="">
+        <a href="https://github.com/EricTimRussell/Tower" target="_blank">
+          <div class="tower">
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">Tower Events Full-Stack Application</h6>
+            <img src="../assets/images/WorksBG/Tower.png" class="img-fluid portfolio-img p-3" alt="">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
+        <span class="fs-lg">My Vuejs & Google Firebase Fullstack Apps</span>
+        <span class="divider"></span>
+      </div>
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+        <a class="riskierFire" href="https://github.com/EricTimRussell/riskierFire" target="_blank">
+          <h6 class="fs-md px-3 text-retro text-retro-shadow">RiskierFire Full-Stack Application</h6>
+        </a>
+      </div>
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+        <a href="https://getoutsidephotography.com/" target="_blank">
+          <div class="get-outside-photo">
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">Get Outside Photography Full-Stack Application</h6>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-12 text-retro d-flex flex-column align-items-center pt-5 pb-2">
+        <span class="fs-lg">My Vuejs & Laravel Fullstack App</span>
+        <span class="divider"></span>
+      </div>
+      <div class="col-xl-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+        <a href="https://github.com/EricTimRussell/gregslist-laravel-vue" target="_blank">
+          <div class="gregs-list">
+            <h6 class="fs-md px-3 text-retro text-retro-shadow">GregsList Full-stack Application</h6>
           </div>
         </a>
       </div>
@@ -140,16 +164,32 @@ a {
   transform: scale(1.1);
 }
 
-.network {
+.get-outside-photo {
   height: 36vh;
   width: 44vh;
   border-radius: 5px;
-  background-image: url("../assets/images/WorksBG/NetworkBG.png");
+  background-image: url("../assets/images/WorksBG/GetOutside-Thumbnail.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.get-outside-photo:hover {
+  color: #1f5297;
+  text-shadow: wheat 2px 1px;
+  transform: scale(1.1);
+}
+
+.gregs-list {
+  height: 36vh;
+  width: 44vh;
+  border-radius: 5px;
+ background-image: url("../assets/images/WorksBG/GregsListUnderConstruction.png");
   background-size: contain;
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
 }
 
-.network:hover {
+.gregs-list:hover {
   color: #1f5297;
   text-shadow: wheat 2px 1px;
   transform: scale(1.1);
@@ -158,12 +198,6 @@ a {
 .portfolio-img {
   height: 15vh;
   width: 15vh;
-  display: cover;
-}
-
-.portfolio-img-network {
-  height: 9vh;
-  width: 30vh;
   display: cover;
 }
 

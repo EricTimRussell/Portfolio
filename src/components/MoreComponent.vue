@@ -5,7 +5,7 @@
   <section class="container-fluid blink">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h2 class="text-retro fs-md d-flex letter-space">WHAT I AM DOING</h2>
+        <h2 class="text-retro d-flex letter-space">WHAT I AM DOING</h2>
         <span class="divider"></span>
       </div>
     </div>
@@ -33,7 +33,7 @@
       <div class="col-12 text-retro text-center">
         <p class="fs-md px-4 p-accessible">Get Outside Photography is a dynamic photography portfolio page that the owner
           can edit and change
-          dynamically. It also will be connected to Shopify and the Pixels Shopify app which enables the owner to add and
+          dynamically. It also will be connected to Shopify which enables the owner to add and
           modify
           their stores products. Get Outside Photography will be seperated into two parts. The first part is the gallery
           website where users can view and read about all the collections of photos. The second part will be the actual
