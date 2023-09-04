@@ -64,7 +64,7 @@
         <h3 class="hero-title">Level 5 - Full-Stack Developer</h3>
         <p class="letter-space mb-5 hero-motto">I am a
           full-stack developer
-          with a particular love for Vuejs, Laravel and web design.</p>
+          with a particular love for Vuejs and web design.</p>
       </div>
     </div>
   </section>
