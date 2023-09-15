@@ -12,25 +12,35 @@
     <div class="row justify-content-center">
       <div class="col-12 text-retro pt-4">
         <h2 class="mx-2 text-center">Current Projects:</h2>
-        <h3 class="text-center fs-lg">Riskier Fire & Get Outside Photography</h3>
+        <h3 class="text-center fs-lg">GregsList, Riskier Fire, & Get Outside Photography</h3>
       </div>
-      <div class="col-12 col-md-4 col-sm-6">
-        <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/riskierFire">
-          <img class="riskier-2 my-4" src="../assets/images/More/addressBarImage.jpg" alt="riskier logo">
+      <div class="col-12 d-flex justify-content-center">
+        <a href="https://github.com/EricTimRussell/gregslist-laravel-vue/tree/main" target="_blank">
+          <img class="gregslist my-4" src="../assets//images/WorksBG/GregsListUnderConstruction.png"
+            alt="under construction road sign">
         </a>
       </div>
-      <div class="col-12 text-retro text-center">
+      <div class="col-10 text-retro text-center">
+        <p class="fs-md px-4 p-accessible">Gregslist is a craigslist clone I am creating using Vuejs, Laravel, &
+          InertiaJs. It will be my first full-stack application using Laravel and PHP.</p>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <a target="_blank" href="https://github.com/EricTimRussell/riskierFire">
+          <img class="riskier-2 my-4" src="../assets/images/More/Riskier-logo-bg.png" alt="riskier logo">
+        </a>
+      </div>
+      <div class="col-10 text-retro text-center">
         <p class="fs-md px-4 p-accessible"> Riskier Fire will be a more complete prettier version of my riskier app and
           board game. I have modelled and 3d printed most of my physical pieces. I am currently play testing and refining
           the riskier app and rules.</p>
       </div>
-      <div class="col-12 col-md-4 col-sm-6">
+      <div class="col-12">
         <a class="d-flex justify-content-center" target="_blank" href="https://github.com/EricTimRussell/pam-photo">
           <img class="photo-logo my-4" src="../assets/images/More/Get_Outside_Photography.png"
             alt="get outside photography logo">
         </a>
       </div>
-      <div class="col-12 text-retro text-center">
+      <div class="col-10 text-retro text-center">
         <p class="fs-md px-4 p-accessible">Get Outside Photography is a dynamic photography portfolio page that the owner
           can edit and change
           dynamically. It also will be connected to Shopify which enables the owner to add and
@@ -106,8 +116,21 @@ export default {
 
 }
 
+.gregslist{
+  height: 22vh;
+  width: 22vh;
+  border-radius: 5px;
+  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+}
+
+.gregslist:hover{
+  transform: scale(1.1);
+}
+
 .riskier-2 {
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  height: 22vh;
+  width: 44vh;
 }
 
 .riskier-2:hover {

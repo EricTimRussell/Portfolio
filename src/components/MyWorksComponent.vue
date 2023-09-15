@@ -168,7 +168,8 @@ a {
   width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/GetOutside-Thumbnail.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
 }
 
