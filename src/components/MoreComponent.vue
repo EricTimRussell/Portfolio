@@ -106,39 +106,41 @@ export default {
 }
 
 .photo-logo {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   width: 11.5rem;
   height: auto;
 }
 
 .photo-logo:hover {
-  transform: scale(1.1);
-
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .gregslist{
   height: 22vh;
   width: 22vh;
   border-radius: 5px;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .gregslist:hover{
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .riskier-2 {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   height: 22vh;
   width: 44vh;
 }
 
 .riskier-2:hover {
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .logo {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   background: linear-gradient(#33ff003e, #33ff003e);
   width: 30rem;
   height: 38rem;
@@ -146,7 +148,7 @@ export default {
 }
 
 .eco-logo {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   background: linear-gradient(#33ff003e, #33ff003e);
   background-image: url(../assets/images/More/VueEcosystem.png);
   width: 75rem;

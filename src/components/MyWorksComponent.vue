@@ -109,13 +109,13 @@ a {
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/TowerBG.png");
   background-size: contain;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .tower:hover {
   color: #1f5297;
-  text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .keepr {
@@ -124,13 +124,14 @@ a {
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/KeeprBG.png");
   background-size: contain;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .keepr:hover {
   color: #1f5297;
   text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .riskier {
@@ -139,28 +140,28 @@ a {
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/RiskierBG.png");
   background-size: cover;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .riskier:hover {
   color: #1f5297;
   text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
-
 .riskierFire {
   height: 36vh;
   width: 44vh;
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/RiskierFire.png");
   background-size: cover;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .riskierFire:hover {
   color: #1f5297;
-  text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .get-outside-photo {
@@ -170,13 +171,13 @@ a {
   background-image: url("../assets/images/WorksBG/GetOutside-Thumbnail.png");
   background-size: cover;
   background-position: center;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .get-outside-photo:hover {
   color: #1f5297;
-  text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .gregs-list {
@@ -185,13 +186,13 @@ a {
   border-radius: 5px;
   background-image: url("../assets/images/WorksBG/GregsListUnderConstruction.png");
   background-size: contain;
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 8px;
+  border: solid #33ff00 2px;
 }
 
 .gregs-list:hover {
   color: #1f5297;
-  text-shadow: wheat 2px 1px;
-  transform: scale(1.1);
+  transform: translateY(-15px);
+  box-shadow:#33ff00 0px 5px 5px 2px;
 }
 
 .portfolio-img {

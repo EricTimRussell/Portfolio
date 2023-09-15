@@ -71,7 +71,7 @@ export default {
 }
 
 .logo {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   background: linear-gradient(#33ff003e, #33ff003e);
   width: 20rem;
   height: 22rem;
@@ -81,33 +81,6 @@ export default {
 .logo:hover {
   background: linear-gradient(#33ff0097, #33ff0097);
 }
-
-/* .anim-slide {
-  animation-name: skills-slide;
-  animation-duration: 3s;
-  animation-delay: .5s;
-  animation-fill-mode: both;
-  -moz-animation-name: skills-slide;
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: .5s;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-name: skills-slide;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: .5s;
-  -webkit-animation-fill-mode: both;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-@keyframes skills-slide {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-} */
 
 @media (max-width: 1375px) {
   .logo {

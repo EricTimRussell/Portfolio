@@ -9,7 +9,7 @@
         <span class="divider"></span>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12 d-flex flex-column align-items-center pt-5 fade-in">
-        <img class="px-5 code-works-logo mobile"
+        <img class="p-4 code-works-logo mobile"
           src="https://codeworks.blob.core.windows.net/public/assets/img/cw-logo-circle.png" alt="Boise CodeWorks Logo">
         <h3 class="text-retro fs-md pt-3"><span class="material-symbols-outlined text-retro fs-lg">
             school
@@ -58,7 +58,7 @@ export default {
 }
 
 .code-works-logo {
-  box-shadow: #33ff00 5px 5px 5px 0px, #33ff00 0px 0px 5px 5px;
+  border: solid #33ff00 2px;
   background: linear-gradient(#33ff003e, #33ff003e);
 }
 
