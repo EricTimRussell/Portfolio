@@ -53,7 +53,7 @@
     <div class="row">
       <div class="col-12 text-retro d-flex flex-column align-items-center pt-5">
         <span class="divider"></span>
-        <h2 class="mx-2 text-center">Currently Learning or Improving</h2>
+        <h2 class="mx-2 text-center">Technologies I am currently learning or improving</h2>
       </div>
     </div>
     <div class="row justify-content-center py-4">

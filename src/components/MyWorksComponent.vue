@@ -5,7 +5,7 @@
   <section class="container-fluid blink">
     <div class="row pt-3">
       <div class="col-12 d-flex flex-column align-items-center">
-        <h1 class="text-retro d-flex letter-space">My Works</h1>
+        <h1 class="text-retro d-flex letter-space">MY WORKS</h1>
         <span class="divider"></span>
       </div>
     </div>
