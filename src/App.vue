@@ -86,7 +86,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(18, 16, 16, 0.1);
+  background: #1210101a;
   opacity: 0;
   z-index: 2;
   pointer-events: none;

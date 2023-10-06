@@ -17,14 +17,6 @@
         <span class="nav-line-x"></span>
         <span class="nav-line-y"></span>
       </div>
-      <div class="col-1 nav-section mx-1"></div>
-      <div class="col-1 d-flex justify-content-center">
-        <span class="nav-line-y"></span>
-        <span class="nav-line-x"></span>
-        <RouterLink to="skills" class="fs-lg nav-button">SKILLS</RouterLink>
-        <span class="nav-line-x"></span>
-        <span class="nav-line-y"></span>
-      </div>
       <div class="col-1 nav-section"></div>
       <div class="col-1 d-flex justify-content-center ml-1">
         <span class="nav-line-y"></span>

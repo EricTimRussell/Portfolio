@@ -2,7 +2,7 @@
   <header class="sticky-top">
     <NavbarComponent />
   </header>
-  <section class="container-fluid flicker-animation page-load-blink">
+  <section class="container-fluid flicker-animation page-load-flicker">
     <div class="row pt-3">
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">LVL</span>
@@ -17,8 +17,8 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid flicker-animation page-load-blink">
-    <div class="row p-5 fade-in">
+  <section class="container-fluid flicker-animation page-load-flicker">
+    <div class="row px-5 py-3 fade-in">
       <div class="col-3 d-flex flex-column align-items-start">
         <span class="fs-xl border-thick text-retro mobile">CSS</span>
         <span class="fs-xl text-retro px-3 my-3 mobile">SQL</span>
@@ -32,7 +32,7 @@
       </div>
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
         <h3 class="hero-title">Level 5 - Full-Stack Developer</h3>
-        <p class="letter-space mb-5 hero-motto">I am a
+        <p class="letter-space mb-5 hero-motto pt-3">I am a
           full-stack developer
           with a particular love for Vuejs and web design.</p>
       </div>
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-.page-load-blink {
+.page-load-flicker {
   animation: blinker .1s step-start 2;
 }
 
