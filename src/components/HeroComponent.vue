@@ -36,9 +36,8 @@
         <span class="status-bar text-retro">LVL</span>
         <span class="status-bar text-retro">5</span>
       </div>
-      <div class="col-4 d-flex justify-content-between header-border">
-        <span class="status-bar text-retro">HP</span>
-        <span class="status-bar text-retro">95/100</span>
+      <div class="col-4 d-flex justify-content-center header-border">
+        <span class="status-bar text-retro hero-name">Eric Russell</span>
       </div>
       <div class="col-4 d-flex justify-content-between header-border">
         <span class="status-bar text-retro">XP</span>
@@ -60,7 +59,6 @@
         <p class="fs-lg text-retro text-center">80's Synthwave &nbsp&nbsp X )</p>
       </div>
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
-        <h2 class="hero-name">Eric Russell</h2>
         <h3 class="hero-title">Level 5 - Full-Stack Developer</h3>
         <p class="letter-space mb-5 hero-motto">I am a
           full-stack developer
