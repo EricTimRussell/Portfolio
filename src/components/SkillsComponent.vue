@@ -56,8 +56,8 @@ export default {
 }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   padding: 4px;
   z-index: 4;
 }
@@ -67,4 +67,10 @@ export default {
   border-radius: 25%;
 }
 
+@media (max-width: 768px) {
+  .logo{
+    width: 3rem;
+    height: 3rem;
+  }
+}
 </style>
