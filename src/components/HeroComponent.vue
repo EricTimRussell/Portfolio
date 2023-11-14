@@ -31,7 +31,7 @@
         <p class="fs-lg text-retro text-center">80's Synthwave &nbsp&nbsp X )</p>
       </div>
       <div class="col-12 d-flex flex-column justify-content-center align-items-center rounded pt-3">
-        <h3 class="hero-title">Level 5 - Full-Stack Developer</h3>
+        <h3 class="hero-title">Level 5 - Software Developer</h3>
         <p class="letter-space mb-5 hero-motto pt-3">I am a
           full-stack developer
           with a particular love for Vuejs and web design.</p>

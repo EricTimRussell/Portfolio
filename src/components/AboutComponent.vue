@@ -16,20 +16,18 @@
           </span> Class of Fall '22</h3>
       </div>
       <div class="col-lg-5 col-md-12 col-sm-12 text-retro fs-md my-3 letter-space fade-in">
-        <p class="paragraph-fs paragraph text-shadow pt-4"> &nbsp&nbsp My career life began when I graduated from Boise
-          State
-          University
-          with a BS in
-          criminal
-          justice. Shortly
-          after graduating I learned that the world of law enforcement was not for me. I found myself working in the
-          logistics industry, but it was not a fulfilling career path. I discoverd software development
+        <p class="paragraph-fs paragraph text-shadow pt-4"> &nbsp&nbsp I discoverd software development
           from
           a simple Udemy course on javascript and after that I knew it was what I wanted to pursue. After a grueling
-          13-week software development bootcamp with CodeWorks Boise, I have gained the confidence and skills needed
-          to pursue my developer goals. Currently I spend alot of my free time learning the Vue ecosystem, Larvel/PHP and
-          Google
-          Firebase.</p>
+          13-week software development bootcamp with CodeWorks Boise, I have built the confidence and skills needed to
+          build web
+          applications. I primarily spend my software development time honing my Vue.js, Firbase, and web design skills.
+          <br>
+          &nbsp&nbsp Presently, I am a master's student enrolled in Boise State Universities cyber
+          operations and
+          resilience program. My intention is to pursue a career in software penetration testing as a cybersecurity
+          analyst and/or cybersecurity engineer.
+        </p>
       </div>
     </div>
   </section>
