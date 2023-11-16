@@ -17,12 +17,6 @@
       </div>
       <div class="col-12 d-flex justify-content-center gap-2 py-4">
         <div class="logo">
-          <img title="CSharp" class="logo" src="../assets/images/Skills/c-sharp.png" alt="C sharp logo">
-        </div>
-        <div class="logo">
-          <img title="DotNet" class="logo" src="../assets/images/Skills/dotnet.png" alt="dot net logo">
-        </div>
-        <div class="logo">
           <img title="MySQL" class="logo" src="../assets/images/Skills/mysql.png" alt="my SQL logo">
         </div>
         <div class="logo">

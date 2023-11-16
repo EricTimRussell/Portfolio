@@ -41,26 +41,11 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
 import NavbarComponent from "./NavbarComponent.vue";
 
 export default {
   setup() {
-    const isLoading = ref(false);
-    function pageLoading() {
-      isLoading.value = true;
-      setTimeout(() => {
-        isLoading.value = false;
-      }, 13000);
-    }
-    onMounted(() => {
-      pageLoading();
-    });
     return {
-      isLoading,
-      skipAnimation() {
-        isLoading.value = false;
-      }
     };
   },
   components: { NavbarComponent }
